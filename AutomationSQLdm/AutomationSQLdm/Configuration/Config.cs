@@ -36,7 +36,8 @@ namespace AutomationSQLdm.Configuration
 		public const string Query_DBSizeDateTimeAggregation   		= "Select * from DatabaseSizeDateTimeAggregation";
 		public const string Query_DiskDriveStatisticsAggregation	= "Select * from DiskDriveStatisticsAggregation";
 		public const string Query_TableGrowthAggregation 			= "Select * from TableGrowthAggregation";
-		
+		public static string WindowsUser = System.Configuration.ConfigurationManager.AppSettings["WindowsUser"].ToString();
+		public static string WinUserPassword = System.Configuration.ConfigurationManager.AppSettings["WinUserPassword"].ToString();
 		
 		
     }

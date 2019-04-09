@@ -261,6 +261,10 @@ namespace AutomationSQLdm.Grooming_Modifications
             RepoItemInfo _btnapplyInfo;
             RepoItemInfo _txtaggregateforecastingdataInfo;
             RepoItemInfo _txtgroomforecastingdataInfo;
+            RepoItemInfo _groomstandardmetrixandbaselineInfo;
+            RepoItemInfo _aggregatequerydataintoInfo;
+            RepoItemInfo _groominactivealertInfo;
+            RepoItemInfo _groomprescriptiveanalysisInfo;
 
             /// <summary>
             /// Creates a new GroomingOptionWindow  folder.
@@ -286,6 +290,10 @@ namespace AutomationSQLdm.Grooming_Modifications
                 _btnapplyInfo = new RepoItemInfo(this, "btnApply", ".//button[@controlname='apply']", 30000, null, "efff6fbd-be15-4e48-b072-07a1abf036e0");
                 _txtaggregateforecastingdataInfo = new RepoItemInfo(this, "txtAggregateForecastingData", ".//container[@controlname='tableLayoutPanel4']/container[@controlname='auditGroomingThresholdNumericUpDown' and @instance='6']/text[@controlname='upDownEdit']", 30000, null, "73504de1-d7ad-4305-9f7d-502158b4fd56");
                 _txtgroomforecastingdataInfo = new RepoItemInfo(this, "txtGroomForecastingData", ".//container[@controlname='tableLayoutPanel4']/container[@controlname='GroomForecastNumericUpDown' and @instance='7']/text[@controlname='upDownEdit']", 30000, null, "ac2fb595-2226-49f2-9bc1-49617e0f6e66");
+                _groomstandardmetrixandbaselineInfo = new RepoItemInfo(this, "GroomStandardMetrixAndBaseline", ".//container[@controlname='tableLayoutPanel4']/container[@controlname='metricsGroomingThresholdNumericUpDown']/text[@controlname='upDownEdit']", 30000, null, "cb98d8c0-d2f4-4450-b009-3532ca0073e0");
+                _aggregatequerydataintoInfo = new RepoItemInfo(this, "AggregateQueryDataInto", ".//container[@controlname='tableLayoutPanel4']/container[@controlname='aggregationThresholdNumericUpDown']/text[@controlname='upDownEdit']", 30000, null, "de5fbc57-3a2c-4f81-9e5c-abc2a430930a");
+                _groominactivealertInfo = new RepoItemInfo(this, "GroomInactiveAlert", ".//container[@controlname='tableLayoutPanel4']/container[@controlname='alertsGroomingThresholdNumericUpDown']/text[@controlname='upDownEdit']", 30000, null, "3fb2ebda-cce5-4ac4-b199-394653d2665c");
+                _groomprescriptiveanalysisInfo = new RepoItemInfo(this, "GroomPrescriptiveAnalysis", ".//container[@controlname='tableLayoutPanel4']/container[@controltypename='NumericUpDown' and @instance='5']/text[@controlname='upDownEdit']", 30000, null, "75d1eb55-600b-44fc-ac08-9fc009910a61");
             }
 
             /// <summary>
@@ -741,6 +749,102 @@ namespace AutomationSQLdm.Grooming_Modifications
                 get
                 {
                     return _txtgroomforecastingdataInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroomStandardMetrixAndBaseline item.
+            /// </summary>
+            [RepositoryItem("cb98d8c0-d2f4-4450-b009-3532ca0073e0")]
+            public virtual Ranorex.Text GroomStandardMetrixAndBaseline
+            {
+                get
+                {
+                    return _groomstandardmetrixandbaselineInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroomStandardMetrixAndBaseline item info.
+            /// </summary>
+            [RepositoryItemInfo("cb98d8c0-d2f4-4450-b009-3532ca0073e0")]
+            public virtual RepoItemInfo GroomStandardMetrixAndBaselineInfo
+            {
+                get
+                {
+                    return _groomstandardmetrixandbaselineInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AggregateQueryDataInto item.
+            /// </summary>
+            [RepositoryItem("de5fbc57-3a2c-4f81-9e5c-abc2a430930a")]
+            public virtual Ranorex.Text AggregateQueryDataInto
+            {
+                get
+                {
+                    return _aggregatequerydataintoInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AggregateQueryDataInto item info.
+            /// </summary>
+            [RepositoryItemInfo("de5fbc57-3a2c-4f81-9e5c-abc2a430930a")]
+            public virtual RepoItemInfo AggregateQueryDataIntoInfo
+            {
+                get
+                {
+                    return _aggregatequerydataintoInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroomInactiveAlert item.
+            /// </summary>
+            [RepositoryItem("3fb2ebda-cce5-4ac4-b199-394653d2665c")]
+            public virtual Ranorex.Text GroomInactiveAlert
+            {
+                get
+                {
+                    return _groominactivealertInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroomInactiveAlert item info.
+            /// </summary>
+            [RepositoryItemInfo("3fb2ebda-cce5-4ac4-b199-394653d2665c")]
+            public virtual RepoItemInfo GroomInactiveAlertInfo
+            {
+                get
+                {
+                    return _groominactivealertInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroomPrescriptiveAnalysis item.
+            /// </summary>
+            [RepositoryItem("75d1eb55-600b-44fc-ac08-9fc009910a61")]
+            public virtual Ranorex.Text GroomPrescriptiveAnalysis
+            {
+                get
+                {
+                    return _groomprescriptiveanalysisInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroomPrescriptiveAnalysis item info.
+            /// </summary>
+            [RepositoryItemInfo("75d1eb55-600b-44fc-ac08-9fc009910a61")]
+            public virtual RepoItemInfo GroomPrescriptiveAnalysisInfo
+            {
+                get
+                {
+                    return _groomprescriptiveanalysisInfo;
                 }
             }
         }

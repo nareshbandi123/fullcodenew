@@ -49,5 +49,6 @@ namespace AutomationSQLdm.Commons
 		public  const string Teradata_150 = "Teradata_10.90.1.175_v15.0";
 		public  const string Vertica_91 = "Vertica_10.90.1.54_v9.1";
 		public  const string Vertica_80 = "Vertica_10.90.1.176_v8.0";
+		public  const string WIN2K12_SQL14 = "WIN2K12-SQL14";
     }
 }

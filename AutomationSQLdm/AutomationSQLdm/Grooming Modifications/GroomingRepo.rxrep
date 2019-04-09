@@ -172,6 +172,44 @@ rxversion="8.2">
 			searchtimeout="30000ms">
 				/form[@controlname='GroomingOptionsDialog']//container[@controlname='tableLayoutPanel4']/container[@controlname='GroomForecastNumericUpDown' and @instance='7']/text[@controlname='upDownEdit']
 			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="cb98d8c0-d2f4-4450-b009-3532ca0073e0"
+			name="GroomStandardMetrixAndBaseline"
+			refimgid="83c0bd30-a628-4e31-afb4-4f6a22a8ef22"
+			searchtimeout="30000ms">
+				/form[@controlname='GroomingOptionsDialog']//container[@controlname='tableLayoutPanel4']/container[@controlname='metricsGroomingThresholdNumericUpDown']/text[@controlname='upDownEdit']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="de5fbc57-3a2c-4f81-9e5c-abc2a430930a"
+			name="AggregateQueryDataInto"
+			refimgid="2259b11c-540d-4f57-9469-28eb37422ef8"
+			refpath="/form[@controlname='GroomingOptionsDialog']/container[@controlname='containerPanel']/container[@controlname='tableLayoutPanel3']/container[@controlname='tableLayoutPanel4']/container[@controlname='aggregationThresholdNumericUpDown']/text[@controlname='upDownEdit']"
+			searchtimeout="30000ms">
+				/form[@controlname='GroomingOptionsDialog']//container[@controlname='tableLayoutPanel4']/container[@controlname='aggregationThresholdNumericUpDown']/text[@controlname='upDownEdit']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="3fb2ebda-cce5-4ac4-b199-394653d2665c"
+			name="GroomInactiveAlert"
+			refimgid="8b990ab4-53f5-48d1-843b-6452af5e9226"
+			refpath="/form[@controlname='GroomingOptionsDialog']/container[@controlname='containerPanel']/container[@controlname='tableLayoutPanel3']/container[@controlname='tableLayoutPanel4']/container[@controlname='alertsGroomingThresholdNumericUpDown']/text[@controlname='upDownEdit']"
+			searchtimeout="30000ms">
+				/form[@controlname='GroomingOptionsDialog']//container[@controlname='tableLayoutPanel4']/container[@controlname='alertsGroomingThresholdNumericUpDown']/text[@controlname='upDownEdit']
+			</item>
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="75d1eb55-600b-44fc-ac08-9fc009910a61"
+			name="GroomPrescriptiveAnalysis"
+			refimgid="4d5961e0-e7a8-400e-a8ee-ad2d0223f876"
+			searchtimeout="30000ms">
+				/form[@controlname='GroomingOptionsDialog']//container[@controlname='tableLayoutPanel4']/container[@controltypename='NumericUpDown' and @instance='5']/text[@controlname='upDownEdit']
+			</item>
 			<basepath>
 				/form[@controlname='GroomingOptionsDialog']
 			</basepath>

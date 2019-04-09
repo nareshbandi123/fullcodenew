@@ -201,8 +201,23 @@
     <Compile Include="BVT\TC_722162\VerifySQLdmToday.cs">
       <id>d842ceb9-66f1-4987-a43a-db69cfbe24be</id>
     </Compile>
+    <Compile Include="BVT\TC_T722131\VerifySQLdmUserCanEnableWMIcollectionOption.cs">
+      <id>5e0428e2-51a8-44c2-a094-8d754b52c46e</id>
+    </Compile>
     <Compile Include="Commons\Common.cs">
       <id>d2b51d01-5cb5-43c9-9013-4bbc5d96924a</id>
+    </Compile>
+    <Compile Include="Commons\CommonRepo.cs">
+      <DependentUpon>CommonRepo.rxrep</DependentUpon>
+      <id>8e5dc102-642c-4cc1-ae3e-9440f3a6da65</id>
+      <BoundTo>d1713d11-0cd3-4243-b947-4d5c5f47f2f8</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="Commons\Constants.cs">
+      <id>c738bba3-1883-4961-ad7c-a2fa2ae1d312</id>
+    </Compile>
+    <Compile Include="Commons\DBOperations.cs">
+      <id>c1d6bbf7-1e97-4795-b579-2da16b0491ef</id>
     </Compile>
     <Compile Include="Commons\Reports.cs">
       <id>cd90157f-2c48-422a-a4d0-e1d3f8052ec2</id>
@@ -267,6 +282,63 @@
     <Compile Include="Grooming Modifications\TC_721959\VerifyGroomMetricsAndBaseLineMaxValue.cs">
       <id>9e55a736-c78f-4393-aadc-8085882bdb68</id>
     </Compile>
+    <Compile Include="Grooming Modifications\TC_T721948\VerifyDefaultMetricsDataToBeGroomedAs90days.cs">
+      <id>ec3e9c9d-150b-4f53-ae40-e8ac25ad925a</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\OperatorSecurityRoleRepo.cs">
+      <DependentUpon>OperatorSecurityRoleRepo.rxrep</DependentUpon>
+      <id>c58173a0-684d-4c5e-a675-29a1ebbe500d</id>
+      <BoundTo>47838305-ebcc-47f8-8a82-2ef7e2a1d10b</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\Steps.cs">
+      <id>d1528d85-d2cd-4a04-9d0a-76aec26d04a0</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721974\AddingWindowsUserToSecurityRole.cs">
+      <id>b9b6422f-73b0-44df-bd65-7a8adef9616d</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721974\Recording1.cs">
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <id>1177934a-1f11-4114-ad98-e0aeb8b39412</id>
+      <BoundTo>a07b7db7-b455-407d-a809-ce4bee7f94d2</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721974\Recording1.UserCode.cs">
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <id>cd479ba1-dec6-4518-ae0e-1aa564a124dc</id>
+      <BoundTo>a07b7db7-b455-407d-a809-ce4bee7f94d2</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721975\AddingSqlUserToSecurityRole.cs">
+      <id>9cb6b2b7-ea96-4bf8-ba7a-d4aaa4490ea9</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721976\VerifyViewDataAcknowledgeWindowsUser.cs">
+      <id>fb8e6ffe-896a-4484-b4c7-a05dc66a7abd</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721977\VerifyViewDataAcknowledgeSqlUser.cs">
+      <id>c21c05af-0750-4e89-8350-412e0b3a512b</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721980\VerifyMaintenanceModeAfterSqlUserLogin.cs">
+      <id>ad67a9d4-a0e7-4312-8c90-d61a2fbe8d60</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721981\VerifySnoozeAlertsForFewMinutesForWindowsUser.cs">
+      <id>af8221e1-3b94-46cb-bb29-f0e9f72819c6</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721982\VerifySnoozeAlertsFor10MinutesForWindowsUser.cs">
+      <id>a014bff8-7624-4f91-89e0-66bc9fbeae13</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721983\VerifyMaintenanceModeForWindowsUser.cs">
+      <id>bd68b56a-c9b9-4315-a296-0291ba7f293f</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721992\VerifySnoozeAlertsForFewMinutesForSqlUser.cs">
+      <id>cec1d725-3f7b-4b04-882d-0f615cd343a2</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721993\VerifyMaintenanceModeForSqlUser.cs">
+      <id>f0842040-5f83-4e2f-ac84-4a668e3d9bfd</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721994\VerifySnoozeAlertsForFewMinutesForWindowsUser.cs">
+      <id>2fa269b8-8fcb-425d-a337-4edf9ddf6d26</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>5814e780-ff95-4e51-a14a-9bc079e4f89d</id>
     </Compile>
@@ -308,6 +380,17 @@
       <repoid>6a8a46b8-3493-4005-af89-f3f4c9c1cdfe</repoid>
       <reporootid>66deb29b-1505-4aae-ba1c-80d360e98697</reporootid>
     </None>
+    <None Include="Commons\CommonRepo.rximg">
+      <DependentUpon>CommonRepo.rxrep</DependentUpon>
+      <id>665e5090-4406-4801-8275-fc20b828a833</id>
+      <BoundTo>d1713d11-0cd3-4243-b947-4d5c5f47f2f8</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Commons\CommonRepo.rxrep">
+      <id>d1713d11-0cd3-4243-b947-4d5c5f47f2f8</id>
+      <repoid>454894c8-a743-439e-9ca8-840d1f743896</repoid>
+      <reporootid>9d2c49e9-5e4f-42bf-a8cf-910a588e3639</reporootid>
+    </None>
     <None Include="Grooming Modifications\GroomingRepo.rximg">
       <DependentUpon>GroomingRepo.rxrep</DependentUpon>
       <imageblob>true</imageblob>
@@ -318,6 +401,25 @@
       <id>c328c137-6188-44c6-895f-7710264ab8d9</id>
       <repoid>5a184cd9-40f9-4651-a234-6802be30f893</repoid>
       <reporootid>16a56f01-8f73-4e50-8864-86e658161df7</reporootid>
+    </None>
+    <None Include="OperatorSecurityRole\OperatorSecurityRoleRepo.rximg">
+      <DependentUpon>OperatorSecurityRoleRepo.rxrep</DependentUpon>
+      <id>a0ab59e0-386c-44be-9af7-cceaeaf89f8a</id>
+      <BoundTo>47838305-ebcc-47f8-8a82-2ef7e2a1d10b</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="OperatorSecurityRole\OperatorSecurityRoleRepo.rxrep">
+      <id>47838305-ebcc-47f8-8a82-2ef7e2a1d10b</id>
+      <repoid>e032fee8-66ef-49a5-bc55-053f9974bd0f</repoid>
+      <reporootid>c0b1886f-194f-4804-ae68-99f28ac1402e</reporootid>
+    </None>
+    <None Include="OperatorSecurityRole\TC_T721974\Recording1.rxrec">
+      <id>a07b7db7-b455-407d-a809-ce4bee7f94d2</id>
+      <BoundTo>e56409ae-2a07-4a4b-8e19-290c345bd67e</BoundTo>
+      <recordtableid>e461a081-13dd-49a1-be04-7dd1624076d3</recordtableid>
+    </None>
+    <None Include="TestData\ServerList.csv">
+      <id>4a704034-e244-4abe-ba4a-2d2e4533d04e</id>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -336,6 +438,9 @@
     </Folder>
     <Folder Include="Base">
       <id>ef5cd861-297c-44b3-a2dd-d36529c4ce01</id>
+    </Folder>
+    <Folder Include="BVT\TC_T722131">
+      <id>9696066c-442c-4f4a-afd3-825880196961</id>
     </Folder>
     <Folder Include="BVT\TC_722145">
       <id>507e1fe9-b3aa-4282-8307-c5e66a10f8d3</id>
@@ -403,6 +508,9 @@
     <Folder Include="Grooming Modifications">
       <id>28d505b6-6704-4f18-ae40-dfd9c24fdcc7</id>
     </Folder>
+    <Folder Include="Grooming Modifications\TC_T721948">
+      <id>275e0494-4a7e-45aa-9687-49d9f9465f00</id>
+    </Folder>
     <Folder Include="Grooming Modifications\TC_721962">
       <id>3765b026-6d95-4e3d-b582-2c15e3833da7</id>
     </Folder>
@@ -447,6 +555,42 @@
     </Folder>
     <Folder Include="BVT">
       <id>435ace51-31ae-4bef-bf4d-5d490d806462</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole">
+      <id>d3af87b7-65cf-405a-b7de-0f66403fe3b8</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721994">
+      <id>f238d307-590b-4dce-bef3-9c54a2057a2d</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721993">
+      <id>d1311f71-6a19-44fb-90ac-86f35a737194</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721992">
+      <id>ada0d795-4ebf-45b0-92d6-e6881b257bb3</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721983">
+      <id>b497f7c9-f61c-4bda-8aeb-7da68097831f</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721982">
+      <id>1baf21b8-f274-4f5b-94e6-4ce926db2662</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721981">
+      <id>bf371e4b-0105-45db-a6d8-51ac9a2c142b</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721980">
+      <id>c93710df-9ef0-44fe-b3db-d9ba2da64665</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721977">
+      <id>5b81b0af-8e82-49ec-ab5a-50f08465e463</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721976">
+      <id>57a5a064-90a6-4baa-8728-c541ce27c6c6</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721975">
+      <id>63057c66-458d-4cc0-bf82-67565e7d4d33</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721974">
+      <id>440e405d-5cdc-4e48-bb28-455bddfc5fbc</id>
     </Folder>
     <Folder Include="SQLQueries">
       <id>8a4a7c66-ece1-4b70-b784-bb7bb3876280</id>

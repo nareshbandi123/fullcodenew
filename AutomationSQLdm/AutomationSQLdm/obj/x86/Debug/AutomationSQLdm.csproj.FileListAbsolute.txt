@@ -25,3 +25,13 @@ D:\repos\ankamacode\AutomationSQLdm\AutomationSQLdm\bin\Debug\Ranorex.Core.Resol
 D:\repos\ankamacode\AutomationSQLdm\AutomationSQLdm\obj\x86\Debug\AutomationSQLdm.csprojResolveAssemblyReference.cache
 D:\repos\ankamacode\AutomationSQLdm\AutomationSQLdm\obj\x86\Debug\AutomationSQLdm.exe
 D:\repos\ankamacode\AutomationSQLdm\AutomationSQLdm\obj\x86\Debug\AutomationSQLdm.pdb
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\obj\x86\Debug\AutomationSQLdm.csprojResolveAssemblyReference.cache
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\obj\x86\Debug\AutomationSQLdm.exe
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\obj\x86\Debug\AutomationSQLdm.pdb
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\bin\Debug\AutomationSQLdm.rxtmg
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\bin\Debug\AutomationSQLdm.rxtst
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\bin\Debug\RepositoryImages\BVTRepo66deb29b.rximgres
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\bin\Debug\AutomationSQLdm.exe.config
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\bin\Debug\AutomationSQLdm.exe
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\bin\Debug\AutomationSQLdm.pdb
+D:\repos\fullcodenew\AutomationSQLdm\AutomationSQLdm\bin\Debug\Ranorex.Core.Resolver.dll

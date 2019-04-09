@@ -489,7 +489,24 @@ namespace AutomationSQLdm.Grooming_Modifications
 			}
 		}
 		
-		
+		public static void VerifyDefaultMetricsDataAs90Days()
+		{
+			try 
+			{
+				repo.GroomingOptionWindow.SelfInfo.WaitForExists(new Duration(1000000));
+				
+				Validate.AttributeContains(repo.GroomingOptionWindow.GroomStandardMetrixAndBaselineInfo, "Text", "90");
+				
+				if (repo.GroomingOptionWindow.GroomStandardMetrixAndBaseline.TextValue.Equals("90") )
+					Reports.ReportLog("Groom standard Metrics and baseline Data is Displaying : " + repo.GroomingOptionWindow.GroomStandardMetrixAndBaseline.TextValue, Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+				else
+					Reports.ReportLog("Groom standard Metrics and baseline Data is Displaying : ", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+			} 
+			catch (Exception ex)
+			{
+				throw new Exception("Failed : VerifyDefaultMetricsDataAs90Days :" + ex.Message);
+			}
+		}
 		
     }
 }
