@@ -147,6 +147,30 @@
     <Compile Include="BVT\Steps.cs">
       <id>4f4d7609-24f4-4588-9914-7943fa6ff22b</id>
     </Compile>
+    <Compile Include="BVT\TC_722136\VerifyResourcesProcedureCacheViewIsDisplayedSuccessfully.cs">
+      <id>bb1ddbbe-0693-475b-95fb-be1eb264b956</id>
+    </Compile>
+    <Compile Include="BVT\TC_722138\PendingUpdateVerifythatResourcesDiskviewisDisplayedSuccessfully.cs">
+      <id>8d87d86a-ff69-42aa-b009-0862d6d3e177</id>
+    </Compile>
+    <Compile Include="BVT\TC_722139\VerifyResourcesMemoryviewisDisplayedSuccessfully.cs">
+      <id>62e5cc26-0c1a-4cf2-8830-55670ada6a60</id>
+    </Compile>
+    <Compile Include="BVT\TC_722140\VerifythatResourcesCPUisDisplayedSuccessfully.cs">
+      <id>e8fcb617-627c-4620-97ed-4db421fd67f7</id>
+    </Compile>
+    <Compile Include="BVT\TC_722141\VerifyDatabasesMirroringViewIsDisplayedSuccessfully.cs">
+      <id>bbf79795-7e89-4eaf-83ac-2eeb3bb9b3d4</id>
+    </Compile>
+    <Compile Include="BVT\TC_722142\VerifyResourcesSummaryisDisplayedSuccessfully.cs">
+      <id>d93c36e8-6f9c-4181-95ab-8898d5154e24</id>
+    </Compile>
+    <Compile Include="BVT\TC_722143\VerifyDatabasesTablesIndexesViewIsDisplayedSuccessfully.cs">
+      <id>83c4516d-a892-4d50-8cec-53abe4e608c0</id>
+    </Compile>
+    <Compile Include="BVT\TC_722144\VerifyDatabasesBackupsRestoresViewIsDisplayedSuccessfully.cs">
+      <id>81c056fa-1c4c-4991-aa92-fb84872799b7</id>
+    </Compile>
     <Compile Include="BVT\TC_722145\VerifyDatabasesFilesviewisDisplayedSuccessfully.cs">
       <id>f17c56cd-6da5-4ec2-8e53-b5f4e4aa8137</id>
     </Compile>
@@ -240,18 +264,6 @@
     <Compile Include="Grooming Modifications\TC_721956\VerifyDBSizeTableIsAggregated.cs">
       <id>2179fbd8-966d-4a83-9ba6-8d6a461919b2</id>
     </Compile>
-    <Compile Include="Grooming Modifications\TC_721962\VerifyDBFileStatisticsTableWhichIsAggregatedShouldBeGroomed.cs">
-      <id>c5c3025f-425b-4916-8435-d67954a799df</id>
-    </Compile>
-    <Compile Include="Grooming Modifications\TC_721963\VerifyDBSizeDateTimeAggregated.cs">
-      <id>47937503-b77e-4edf-8a73-32a769399a96</id>
-    </Compile>
-    <Compile Include="Grooming Modifications\TC_721964\VerifyDiskDriveStatisticsAggregated.cs">
-      <id>9d4402d6-72cd-46bf-8095-d0ad73bab143</id>
-    </Compile>
-    <Compile Include="Grooming Modifications\TC_721965\VerifyTableGrowthisAggregated.cs">
-      <id>5cc35c0f-87cf-4e35-8506-edd84b6e775a</id>
-    </Compile>
     <Compile Include="Grooming Modifications\TC_721953\VerifyLatestGroomingStatus.cs">
       <id>2593bdc0-2ced-4cb8-b4ef-350d8a1c6b65</id>
     </Compile>
@@ -281,6 +293,18 @@
     </Compile>
     <Compile Include="Grooming Modifications\TC_721959\VerifyGroomMetricsAndBaseLineMaxValue.cs">
       <id>9e55a736-c78f-4393-aadc-8085882bdb68</id>
+    </Compile>
+    <Compile Include="Grooming Modifications\TC_721962\VerifyDBFileStatisticsTableWhichIsAggregatedShouldBeGroomed.cs">
+      <id>f2a707dd-f56a-43e0-bb99-a1e6ebc4f462</id>
+    </Compile>
+    <Compile Include="Grooming Modifications\TC_721963\VerifyDBSizeDateTimeAggregated.cs">
+      <id>7ba19cef-518e-4197-8e08-8f3a20f7709c</id>
+    </Compile>
+    <Compile Include="Grooming Modifications\TC_721964\VerifyDiskDriveStatisticsAggregated.cs">
+      <id>4a79f129-3bee-408b-8f7d-7dd0f9ae1665</id>
+    </Compile>
+    <Compile Include="Grooming Modifications\TC_721965\VerifyTableGrowthisAggregated.cs">
+      <id>fbc37165-30d8-4319-a881-819f0da6dbbc</id>
     </Compile>
     <Compile Include="Grooming Modifications\TC_T721948\VerifyDefaultMetricsDataToBeGroomedAs90days.cs">
       <id>ec3e9c9d-150b-4f53-ae40-e8ac25ad925a</id>
@@ -438,6 +462,30 @@
     </Folder>
     <Folder Include="Base">
       <id>ef5cd861-297c-44b3-a2dd-d36529c4ce01</id>
+    </Folder>
+    <Folder Include="BVT\TC_722139">
+      <id>69ce9c90-285b-4edd-b285-d1a3240ca559</id>
+    </Folder>
+    <Folder Include="BVT\TC_722138">
+      <id>0702afc5-9c99-4446-9493-f5f15244aca4</id>
+    </Folder>
+    <Folder Include="BVT\TC_722143">
+      <id>ca481bc5-1465-4740-833a-d2af8ad8d62d</id>
+    </Folder>
+    <Folder Include="BVT\TC_722144">
+      <id>ded140a1-ce76-4733-a693-b0ad421f5fac</id>
+    </Folder>
+    <Folder Include="BVT\TC_722141">
+      <id>71079302-9dbc-417b-bb90-d5bcef186919</id>
+    </Folder>
+    <Folder Include="BVT\TC_722136">
+      <id>99da5af7-373a-4af1-86d7-6baf62206085</id>
+    </Folder>
+    <Folder Include="BVT\TC_722140">
+      <id>b797f7ca-8ebb-43ed-9c17-cfc15b5154bd</id>
+    </Folder>
+    <Folder Include="BVT\TC_722142">
+      <id>acce8b64-e927-47be-9f72-c00df446a7ab</id>
     </Folder>
     <Folder Include="BVT\TC_T722131">
       <id>9696066c-442c-4f4a-afd3-825880196961</id>

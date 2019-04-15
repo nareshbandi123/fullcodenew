@@ -17,14 +17,10 @@
       <string>28d505b6-6704-4f18-ae40-dfd9c24fdcc7</string>
       <string>501312b7-0ef0-479f-8203-40d799536f50</string>
       <string>d2307165-0fdb-4f26-b281-ca0f4ac1544c</string>
-      <string>3765b026-6d95-4e3d-b582-2c15e3833da7</string>
-      <string>673820d4-216f-4c0d-a597-589876e57c54</string>
-      <string>447b99ef-0594-4623-859b-fc50b9413151</string>
-      <string>05a7eb2c-c01f-4b28-8723-e1fbd75a8fdf</string>
       <string>d3af87b7-65cf-405a-b7de-0f66403fe3b8</string>
       <string>1baf21b8-f274-4f5b-94e6-4ce926db2662</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[Application[]BVT[TC_T722131[]]Commons[]Configuration[]Grooming Modifications[TC_T721948[]]OperatorSecurityRole[TC_T721974[]TC_T721975[]TC_T721977[]TC_T721980[]TC_T721981[]TC_T721982[]TC_T721983[]TC_T721992[]TC_T721993[]TC_T721994[]OperatorSecurityRoleRepo.rxrep[]]TestData[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\AutomationSQLdm.rxtst&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\OperatorSecurityRole\TC_T721975" />
+  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[Application[]BVT[TC_722141[]TC_722143[]TC_722144[]TC_T722131[]]Commons[]Configuration[]Grooming Modifications[TC_721962[]TC_721963[]TC_721964[]TC_721965[]TC_T721948[]]TestData[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\BVT\TC_T722131\VerifySQLdmUserCanEnableWMIcollectionOption.cs&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\BVT\TC_722138" />
   <StartupProject value="{61F99090-53F7-41D0-9F8A-6FC8C2262E52}" />
 </Properties>

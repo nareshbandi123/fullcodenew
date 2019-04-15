@@ -1,9 +1,12 @@
 ﻿<Properties>
+  <Array name="active">
+    <Element value="BVT\TC_T722131\VerifySQLdmUserCanEnableWMIcollectionOption.cs" />
+  </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Configuration\Config.cs" />
     <Element value="BVT\TC_T722131\VerifySQLdmUserCanEnableWMIcollectionOption.cs" />
     <Element value="AutomationSQLdm.rxtst" />
+    <Element value="Grooming Modifications\Steps.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
