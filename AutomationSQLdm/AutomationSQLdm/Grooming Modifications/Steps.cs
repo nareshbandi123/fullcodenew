@@ -10,6 +10,7 @@ using WinForms = System.Windows.Forms;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
+using Ranorex.Core.Repository;
 
 using AutomationSQLdm.Commons;
 using AutomationSQLdm.Extensions;
@@ -204,6 +205,8 @@ namespace AutomationSQLdm.Grooming_Modifications
 			}
 		}
 		
+
+		
 		public static void DeleteSQLServerInstance(string serverName)
 		{
 			try 
@@ -225,6 +228,8 @@ namespace AutomationSQLdm.Grooming_Modifications
 			}
 		}
 		
+		 				
+			  
 		public static void EnterTextInAggregateForecasting(int AggregateForecasting)
 		{
 			try 
@@ -489,6 +494,89 @@ namespace AutomationSQLdm.Grooming_Modifications
 			}
 		}
 		
+		public static void VerifyFieldsAreEditable()
+ 		{
+ 			if(repo.GroomingOptionWindow.GroomingOnceDailyAt.Enabled.Equals(true))
+    			Reports.ReportLog("GroomingOnceDailyAt and baseline is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("GroomingOnceDailyAt is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.GroomingOnceDailyAtInfo, "Enabled", "true");
+			}
+			
+			if(repo.GroomingOptionWindow.AggregaionOnceDailyAt.Enabled.Equals(true))
+    			Reports.ReportLog("AggregaionOnceDailyAt and baseline is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("AggregaionOnceDailyAt is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.AggregaionOnceDailyAtInfo, "Enabled", "true");
+			}
+			
+			if(repo.GroomingOptionWindow.GroomStandardMetrixAndBaseline.Enabled.Equals(true))
+    			Reports.ReportLog("Groom standard Metrics and baseline is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("Groom standard Metrics and baseline is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.GroomStandardMetrixAndBaselineInfo, "Enabled", "true");
+			}
+			
+			
+			if(repo.GroomingOptionWindow.GroomSessionsQueries.Enabled.Equals(true))
+    			Reports.ReportLog("Groom Sessions Queries is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("Groom Sessions Queries is Not Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.GroomSessionsQueriesInfo, "Enabled", "true");
+			}
+			
+			if(repo.GroomingOptionWindow.GroomInactiveAlert.Enabled.Equals(true))
+				Reports.ReportLog("Groom Inactive Alert is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("Groom Inactive Alert is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.GroomInactiveAlertInfo,  "Enabled", "true");
+			}
+			
+			if(repo.GroomingOptionWindow.AggregateQueryDataInto.Enabled.Equals(true))
+				Reports.ReportLog("Aggregate Query Data Into is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("Aggregate Query Data Into is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.AggregateQueryDataIntoInfo, "Enabled", "true");
+			}
+			
+			if(repo.GroomingOptionWindow.GroomChangeLog.Enabled.Equals(true))
+				Reports.ReportLog("GroomChangeLog is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("GroomChangeLog is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.GroomChangeLogInfo, "Enabled", "true");
+			}
+
+			if(repo.GroomingOptionWindow.GroomPrescriptiveAnalysis.Enabled.Equals(true))
+				Reports.ReportLog("GroomPrescriptiveAnalysis is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("GroomPrescriptiveAnalysis is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.GroomPrescriptiveAnalysisInfo, "Enabled", "true");
+			}
+			
+			if(repo.GroomingOptionWindow.AggregateTextbox.Enabled.Equals(true))
+				Reports.ReportLog("Aggregate Forcasting data is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("Aggregate Forcasting data is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.AggregateTextboxInfo, "Enabled", "true");
+			}
+			
+			if(repo.GroomingOptionWindow.GroomForecastTextbox.Enabled.Equals(true))
+				Reports.ReportLog("Groom Forecasting is Enabled", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+			else
+			{
+				Reports.ReportLog("Groom Forecasting is Not Enabled", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+				Validate.AttributeNotEqual(repo.GroomingOptionWindow.GroomForecastTextboxInfo, "Enabled", "true");
+			}
+ 		}
 		public static void VerifyDefaultMetricsDataAs90Days()
 		{
 			try 

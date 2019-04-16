@@ -49,10 +49,12 @@ namespace AutomationSQLdm.BVT.TC_T722131
         		Steps.EnterUsername(Config.WindowsUser);
         		Steps.EnterPassword(Config.WinUserPassword);
         		Steps.ClickTest();
-        		Steps.VerifyPopupMessage();
+        		Steps.VerifyPopupMessage();        		
+        		//ToDo : Test Rail Status Pass
         	} 
         	catch (Exception ex)
         	{
+        		//ToDo : Test Rail Status Fail
         		Reports.ReportLog(ex.Message, Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
         	}
         	return true;

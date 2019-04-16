@@ -147,8 +147,38 @@
     <Compile Include="BVT\Steps.cs">
       <id>4f4d7609-24f4-4588-9914-7943fa6ff22b</id>
     </Compile>
+    <Compile Include="BVT\TC_722114\BVTVerifyanactionprovidercanbeRemovedSuccessfully.cs">
+      <id>95a8c363-a3ab-45c6-8289-5f3f52363f1d</id>
+    </Compile>
+    <Compile Include="BVT\TC_722115\VerifyanActionProviderCanbeEditedSuccessfully.cs">
+      <id>f1ba9385-f37d-4bd2-8dd5-41d8d099131c</id>
+    </Compile>
+    <Compile Include="BVT\TC_722116\VerifyActionProviderCanbeAddedSuccessfully.cs">
+      <id>f13a60a0-b971-4bdc-9f4f-edcb94b568a4</id>
+    </Compile>
+    <Compile Include="BVT\TC_722117\VerifyanalertresponsecanbeRemovedSuccessfully.cs">
+      <id>e3f87492-799f-45e9-abd1-6113a902a812</id>
+    </Compile>
+    <Compile Include="BVT\TC_722118\VerifyanalertresponsecanbeCopiedSuccessfully.cs">
+      <id>f7c8f48a-0cc5-4ca7-9d8c-41eb79331171</id>
+    </Compile>
+    <Compile Include="BVT\TC_722119\VerifyanalertresponsecanbeEditedSuccessfully.cs">
+      <id>1ad50668-50c6-46f0-a469-1043cbc9bbfb</id>
+    </Compile>
+    <Compile Include="BVT\TC_722120\VerifyanalertresponsecanbeAddedSuccessfully.cs">
+      <id>1ffe01c7-f998-49e5-8a35-98672e0eba99</id>
+    </Compile>
+    <Compile Include="BVT\TC_722126\VerifyServicesSQLAgentJobsViewIsDisplayedSuccessfully.cs">
+      <id>e1364ee3-67eb-4a03-a30b-76f68cf715d3</id>
+    </Compile>
+    <Compile Include="BVT\TC_722135\PendingUpdateVerifythatResourcesServerWaitsviewisDisplayedSuccessfull.cs">
+      <id>47adc0c4-b14a-4125-92b8-2ebc9fdb6112</id>
+    </Compile>
     <Compile Include="BVT\TC_722136\VerifyResourcesProcedureCacheViewIsDisplayedSuccessfully.cs">
       <id>bb1ddbbe-0693-475b-95fb-be1eb264b956</id>
+    </Compile>
+    <Compile Include="BVT\TC_722137\VerifyResourcesFileActivityviewisDisplayedSuccessfully.cs">
+      <id>57577459-efb7-4e21-80a6-f59250179dc3</id>
     </Compile>
     <Compile Include="BVT\TC_722138\PendingUpdateVerifythatResourcesDiskviewisDisplayedSuccessfully.cs">
       <id>8d87d86a-ff69-42aa-b009-0862d6d3e177</id>
@@ -258,11 +288,11 @@
     <Compile Include="Extensions\Extension.cs">
       <id>d57301cc-75c6-40e5-a327-b0aaa0b2f8b4</id>
     </Compile>
+    <Compile Include="Grooming Modifications\TC_21960\VerifyValuesInRepositoryTable.cs">
+      <id>b76ca7b7-c519-4683-95b3-47f159c344fe</id>
+    </Compile>
     <Compile Include="Grooming Modifications\TC_721954\VerifyDBFileStatisticsTableIsAggregated.cs">
       <id>874002f2-d96f-48d2-8c18-b799555374c2</id>
-    </Compile>
-    <Compile Include="Grooming Modifications\TC_721956\VerifyDBSizeTableIsAggregated.cs">
-      <id>2179fbd8-966d-4a83-9ba6-8d6a461919b2</id>
     </Compile>
     <Compile Include="Grooming Modifications\TC_721953\VerifyLatestGroomingStatus.cs">
       <id>2593bdc0-2ced-4cb8-b4ef-350d8a1c6b65</id>
@@ -291,6 +321,9 @@
     <Compile Include="Grooming Modifications\TC_721952\DeleteforMonitoredServerID.cs">
       <id>8f6b83b8-b152-43eb-809a-59d1850e8dfa</id>
     </Compile>
+    <Compile Include="Grooming Modifications\TC_721956\VerifyDBSizeTableIsAggregated.cs">
+      <id>4339d47e-74bb-4480-906b-ddfe9435223e</id>
+    </Compile>
     <Compile Include="Grooming Modifications\TC_721959\VerifyGroomMetricsAndBaseLineMaxValue.cs">
       <id>9e55a736-c78f-4393-aadc-8085882bdb68</id>
     </Compile>
@@ -311,12 +344,12 @@
     </Compile>
     <Compile Include="OperatorSecurityRole\OperatorSecurityRoleRepo.cs">
       <DependentUpon>OperatorSecurityRoleRepo.rxrep</DependentUpon>
-      <id>c58173a0-684d-4c5e-a675-29a1ebbe500d</id>
-      <BoundTo>47838305-ebcc-47f8-8a82-2ef7e2a1d10b</BoundTo>
+      <id>f4fbd9ba-f73c-4f99-9032-6a3da9a911f2</id>
+      <BoundTo>f03f3502-7cc2-4390-a08f-686b674fc636</BoundTo>
       <RepositoryCode>true</RepositoryCode>
     </Compile>
     <Compile Include="OperatorSecurityRole\Steps.cs">
-      <id>d1528d85-d2cd-4a04-9d0a-76aec26d04a0</id>
+      <id>a12c3c79-4fe8-458c-a999-63a41e6fd6d8</id>
     </Compile>
     <Compile Include="OperatorSecurityRole\TC_T721974\AddingWindowsUserToSecurityRole.cs">
       <id>b9b6422f-73b0-44df-bd65-7a8adef9616d</id>
@@ -349,10 +382,16 @@
       <id>af8221e1-3b94-46cb-bb29-f0e9f72819c6</id>
     </Compile>
     <Compile Include="OperatorSecurityRole\TC_T721982\VerifySnoozeAlertsFor10MinutesForWindowsUser.cs">
-      <id>a014bff8-7624-4f91-89e0-66bc9fbeae13</id>
+      <id>afe3796b-224a-44f7-b723-33056a82abb4</id>
     </Compile>
     <Compile Include="OperatorSecurityRole\TC_T721983\VerifyMaintenanceModeForWindowsUser.cs">
       <id>bd68b56a-c9b9-4315-a296-0291ba7f293f</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721988\AbleToSaveUserWithNewPermission.cs">
+      <id>49896586-6d2b-4d87-892b-9f2b227933e5</id>
+    </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721989\VerifyMaintenanceModeForAllServersForWindowsUser.cs">
+      <id>0cf1190a-22d1-40af-bfc9-2e016c33306f</id>
     </Compile>
     <Compile Include="OperatorSecurityRole\TC_T721992\VerifySnoozeAlertsForFewMinutesForSqlUser.cs">
       <id>cec1d725-3f7b-4b04-882d-0f615cd343a2</id>
@@ -365,6 +404,18 @@
     </Compile>
     <Compile Include="Program.cs">
       <id>5814e780-ff95-4e51-a14a-9bc079e4f89d</id>
+    </Compile>
+    <Compile Include="QueryPlan\QueryPlanRepo.cs">
+      <DependentUpon>QueryPlanRepo.rxrep</DependentUpon>
+      <id>0be24bb5-66f0-4cb4-96e9-8d021eb51d83</id>
+      <BoundTo>913b3a5e-acfd-4548-8238-de94858511fa</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="QueryPlan\Steps.cs">
+      <id>2fe9afa7-bd7f-4539-8571-524e6a064363</id>
+    </Compile>
+    <Compile Include="QueryPlan\TC_722069\Inputinvaliddataincollectqueryplanscountandverifychangescantbesaved.cs">
+      <id>4f77f1fa-30d6-467d-acc3-e3181ef5802c</id>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -428,12 +479,12 @@
     </None>
     <None Include="OperatorSecurityRole\OperatorSecurityRoleRepo.rximg">
       <DependentUpon>OperatorSecurityRoleRepo.rxrep</DependentUpon>
-      <id>a0ab59e0-386c-44be-9af7-cceaeaf89f8a</id>
-      <BoundTo>47838305-ebcc-47f8-8a82-2ef7e2a1d10b</BoundTo>
+      <id>e1e3b2da-46e4-4a08-a517-3bb1a2558eb0</id>
+      <BoundTo>f03f3502-7cc2-4390-a08f-686b674fc636</BoundTo>
       <imageblob>true</imageblob>
     </None>
     <None Include="OperatorSecurityRole\OperatorSecurityRoleRepo.rxrep">
-      <id>47838305-ebcc-47f8-8a82-2ef7e2a1d10b</id>
+      <id>f03f3502-7cc2-4390-a08f-686b674fc636</id>
       <repoid>e032fee8-66ef-49a5-bc55-053f9974bd0f</repoid>
       <reporootid>c0b1886f-194f-4804-ae68-99f28ac1402e</reporootid>
     </None>
@@ -441,6 +492,17 @@
       <id>a07b7db7-b455-407d-a809-ce4bee7f94d2</id>
       <BoundTo>e56409ae-2a07-4a4b-8e19-290c345bd67e</BoundTo>
       <recordtableid>e461a081-13dd-49a1-be04-7dd1624076d3</recordtableid>
+    </None>
+    <None Include="QueryPlan\QueryPlanRepo.rximg">
+      <DependentUpon>QueryPlanRepo.rxrep</DependentUpon>
+      <id>c31761fe-e528-4f72-88b5-91ebb0fcfd26</id>
+      <BoundTo>913b3a5e-acfd-4548-8238-de94858511fa</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="QueryPlan\QueryPlanRepo.rxrep">
+      <id>913b3a5e-acfd-4548-8238-de94858511fa</id>
+      <repoid>15534317-1b35-45c5-bf69-1f843eb766cb</repoid>
+      <reporootid>425f0314-efb0-4ba1-80d4-752d599c9284</reporootid>
     </None>
     <None Include="TestData\ServerList.csv">
       <id>4a704034-e244-4abe-ba4a-2d2e4533d04e</id>
@@ -462,6 +524,36 @@
     </Folder>
     <Folder Include="Base">
       <id>ef5cd861-297c-44b3-a2dd-d36529c4ce01</id>
+    </Folder>
+    <Folder Include="BVT\TC_722120">
+      <id>9a2a5054-eeb9-417c-9472-33d1ee9e214f</id>
+    </Folder>
+    <Folder Include="BVT\TC_722119">
+      <id>9d6a01f9-ed4c-4ac7-9f49-58bf4aafcdcf</id>
+    </Folder>
+    <Folder Include="BVT\TC_722118">
+      <id>152033b0-7043-4b74-865c-5ca8e4b4816e</id>
+    </Folder>
+    <Folder Include="BVT\TC_722117">
+      <id>6cc8fbf4-cca4-4010-9dba-5c45d979633c</id>
+    </Folder>
+    <Folder Include="BVT\TC_722114">
+      <id>b29b619e-046d-480f-bffd-281836e5f2f3</id>
+    </Folder>
+    <Folder Include="BVT\TC_722115">
+      <id>6af2d978-dc81-48b0-adcc-d7e7b1fe2a09</id>
+    </Folder>
+    <Folder Include="BVT\TC_722116">
+      <id>dcecf785-ae09-448e-9feb-81bd75d44bdf</id>
+    </Folder>
+    <Folder Include="BVT\TC_722126">
+      <id>33a3bacb-b4c0-4c34-8f35-43902ef18a04</id>
+    </Folder>
+    <Folder Include="BVT\TC_722135">
+      <id>2d6b78ea-eb1c-44bb-b4da-f337949fb80e</id>
+    </Folder>
+    <Folder Include="BVT\TC_722137">
+      <id>b954a892-36f3-4e65-8c83-0800a9ebb180</id>
     </Folder>
     <Folder Include="BVT\TC_722139">
       <id>69ce9c90-285b-4edd-b285-d1a3240ca559</id>
@@ -556,6 +648,9 @@
     <Folder Include="Grooming Modifications">
       <id>28d505b6-6704-4f18-ae40-dfd9c24fdcc7</id>
     </Folder>
+    <Folder Include="Grooming Modifications\TC_21960">
+      <id>98759f0e-d651-46b9-8146-dbfaf3f8a8c9</id>
+    </Folder>
     <Folder Include="Grooming Modifications\TC_T721948">
       <id>275e0494-4a7e-45aa-9687-49d9f9465f00</id>
     </Folder>
@@ -604,6 +699,15 @@
     <Folder Include="BVT">
       <id>435ace51-31ae-4bef-bf4d-5d490d806462</id>
     </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721989">
+      <id>186ee7f4-ef95-49fe-9769-a252f72a8fe6</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721988">
+      <id>896c0a3f-c17a-42c3-9681-bf9a37bffc09</id>
+    </Folder>
+    <Folder Include="QueryPlan">
+      <id>db34df95-e9cf-4f20-b04c-3bc2c9802204</id>
+    </Folder>
     <Folder Include="OperatorSecurityRole">
       <id>d3af87b7-65cf-405a-b7de-0f66403fe3b8</id>
     </Folder>
@@ -639,6 +743,9 @@
     </Folder>
     <Folder Include="OperatorSecurityRole\TC_T721974">
       <id>440e405d-5cdc-4e48-bb28-455bddfc5fbc</id>
+    </Folder>
+    <Folder Include="QueryPlan\TC_722069">
+      <id>62160dca-0078-43fb-9227-be0da74ac54b</id>
     </Folder>
     <Folder Include="SQLQueries">
       <id>8a4a7c66-ece1-4b70-b784-bb7bb3876280</id>

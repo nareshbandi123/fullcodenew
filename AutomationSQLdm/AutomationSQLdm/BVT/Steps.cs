@@ -10,6 +10,7 @@ using WinForms = System.Windows.Forms;
 using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Testing;
+using Ranorex.Core.Repository;
 
 using AutomationSQLdm.Commons;
 using AutomationSQLdm.Extensions;
@@ -29,6 +30,18 @@ namespace AutomationSQLdm.BVT
     public static class Steps 
     {
     	public static BVTRepo repo = BVTRepo.Instance;
+    	
+    	public const string AlertActionsandResponses_MENU = @"/contextmenu[@processname='SQLdmDesktopClient']/menuitem[@automationid='menuToolsAlertActions']";
+    	public static string ProviderName="SMTPProvider";
+    	public static string ProviderAddress="SMTPProviderAddress";
+    	public static string ProviderUserName="SMTPProviderName";
+    	public static string ProviderPassword="SMTPProvider";
+    	public static string ProviderEmail="SMTPProvider@gmail.com";
+    	public static string ProviderEditName="NewSMTPProvider";
+    	public static string SMTPToAddress="SMTPResponse@gmail.com";
+    	public static string ResponseName ="ResponseName";
+    	public static string EditResponseName ="NewResponseName";
+    	public static string CopyResponseName ="ResponseName(Copy)";
     	
     	public static void VerifySQLdmToday()
 			{
@@ -907,7 +920,818 @@ namespace AutomationSQLdm.BVT
 			}
 		}
 		
+		 public static void ClickOnResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tabResourcesInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tabResources.Click();
+				    Reports.ReportLog("Successfully Clicked On Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnResourcesTab :" + ex.Message);
+				}
+			}
+		 public static void ClickOnSummaryInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESSummaryInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESSummary.Click();
+				    Reports.ReportLog("Successfully Clicked On Summary In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnSummaryInResourcesTab :" + ex.Message);
+				}
+			}
+		 
+		   public static void VerifySummaryViewInResources()
+			{
+				try 
+				{ 
+					
+		            if(repo.SQLdm.TableLayoutPanelInfo.Exists())
+		             {
+		                CompressedImage rsSummary = repo.SQLdm.TableLayoutPanelInfo.GetRESSummary();
+		                Imaging.FindOptions options = Imaging.FindOptions.Default;
+		                RepoItemInfo info = repo.SQLdm.TableLayoutPanelInfo;
+		                bool isvalid = Validate.ContainsImage(info, rsSummary, options,"Summary View image comparision in Resources Tab", false);
+			         }
+			    }
+	            catch (Exception ex)
+	            {
+	                throw new Exception("Failed : VerifySummaryViewInResources  : " + ex.Message);
+	            }
+
+			}
+		   
+		  public static void ClickOnProcedureCacheInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESProcedureCacheInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESProcedureCache.Click();
+				    Reports.ReportLog("Successfully Clicked On ProcedureCache In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnProcedureCacheInResourcesTab :" + ex.Message);
+				}
+			}   
+		  
+		     public static void ClickOnServerWaitsInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESServerWaitsInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESServerWaits.Click();
+				    Reports.ReportLog("Successfully Clicked On ServerWaits In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnServerWaitsInResourcesTab :" + ex.Message);
+				}
+			} 
+			 
+		      public static void VerifyServerWaitsInResources()
+			{
+				try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblRESServerWaitsInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblRESServerWaitsInfo.Exists())
+					{
+						repo.SQLdm.tblRESServerWaits.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Server Waits In Resources Is:" + repo.SQLdm.tblRESServerWaits.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Server Waits Displayed Successfully In Resources", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Server Waits Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyServerWaitsInResources :" + ex.Message);
+				}
+			}
+		      public static void ClickOnServicesTab()
+			  {
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tabServicesInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tabServices.Click();
+				    Reports.ReportLog("Successfully Clicked On Services Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnServicesTab :" + ex.Message);
+				}
+			  } 
+		      
+		       public static void VerifySummaryInServices()
+			  {
+			  	try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblDBSServiceSummaryInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblDBSServiceSummaryInfo.Exists())
+					{
+						repo.SQLdm.tblDBSServiceSummary.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Summary In Services Is:" + repo.SQLdm.tblDBSServiceSummary.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Summary View Displayed Successfully in Services", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Summary View Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifySummaryInServices :" + ex.Message);
+				}
+			  }
+		       
+		       
+            public static void ClickOnSqlAgentJobsInServices()
+			{
+				try 
+				{					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ServicesTab.rgSERSqlAgentJobsInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ServicesTab.rgSERSqlAgentJobs.Click();
+				    Reports.ReportLog("Successfully Clicked On Sql Agent Jobs in Services", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnSqlAgentJobsInServices :" + ex.Message);
+				}
+			}
+			   public static void VerifySqlAgentJobsInServices()
+			  {
+			  try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblDBSServiceSqlAgentJobsInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblDBSServiceSqlAgentJobsInfo.Exists())
+					{
+						repo.SQLdm.tblDBSServiceSqlAgentJobs.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Sql Agent Jobs In Services Is:" + repo.SQLdm.tblDBSServiceSqlAgentJobs.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Sql Agent Jobs View Displayed Successfully in Services", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Sql Agent Jobs View Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifySqlAgentJobsInServices :" + ex.Message);
+				}
+			  }
+			   
+			   public static void VerifySqlAgentJobsJobsHistoryInServices()
+			  {
+			  try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblDBSServicesJobHistoryInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblDBSServicesJobHistoryInfo.Exists())
+					{
+				    	//repo.SQLdm.tblDBSServicesJobHistory
+						repo.SQLdm.tblDBSServicesJobHistory.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Sql Agent Jobs Histroy In Services Is:" + repo.SQLdm.tblDBSServicesJobHistory.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Sql Agent Jobs Histroy View Displayed Successfully in Services", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Sql Agent Jobs Histroy View Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifySqlAgentJobsJobsHistoryInServices :" + ex.Message);
+				}
+			  }
+		      
+		        public static void ClickOnFileActivityInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESFileActivityInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESFileActivity.Click();
+				    Reports.ReportLog("Successfully Clicked On FileActivity In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnFileActivityInResourcesTab :" + ex.Message);
+				}
+			}   
+		        
+		      public static void VerifyFileActivityInResources()
+			{
+				try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ddlRESFileActivityInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.ddlRESFileActivityInfo.Exists())
+					{
+						Reports.ReportLog("File Activity Displayed Successfully In Resources", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("File Activity  Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyFileActivityInResources :" + ex.Message);
+				}
+			}
+            
+            public static void ClickOnTools()
+		{
+		try 
+		{
+		repo.SQLdm.ToolsInfo.WaitForExists(new Duration(1000000));
+		repo.SQLdm.Tools.Click();
+		Reports.ReportLog("ClickOnTools", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+		} 
+		catch (Exception ex)
+		{
+		throw new Exception("Failed : ClickOnTools :" + ex.Message);
+		}
+		}
+            
+         public static void SelectAlertActionsandResponsesOption()
+		{ 
+		try
+		{
 		
+			Ranorex.MenuItem AlertActionsandResponsesMenuItem = AlertActionsandResponses_MENU;
+			if(AlertActionsandResponsesMenuItem != null) 
+			AlertActionsandResponsesMenuItem.ClickThis();
+		Reports.ReportLog("SelectAlertActionsandResponsesOption", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+		}
+		catch (Exception ex)
+		{
+		throw new Exception("Failed : SelectAlertActionsandResponsesOption :" + ex.Message);
+		}
+		}
+		public static void ClickonActionProvidersOption()
+				{
+					try 
+					{
+						repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+						repo.AlertActionsandResponsesOptionDialog.tabActionProviders.Click();
+					  
+						Reports.ReportLog("ClickOnActionProviders", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : ClickOnActionProviders :" + ex.Message);
+					}
+				}
+		
+		 public static void AddAlertResponses()
+		 {
+			try 
+					{
+						repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+						repo.AlertActionsandResponsesOptionDialog.btnAlertAndResponseAdd.Click();
+						repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+						repo.AlertResponsesDialog.btnARDAdd.Click();
+						//repo.AddActionProviderDialog.SelfInfo.WaitForExists(new Duration(1000000));
+						repo.AddActionProviderDialog.chkNewProviderInfo.WaitForExists(new Duration(1000000));
+						repo.AddActionProviderDialog.chkNewProvider.Rows[0].DoubleClick();
+						
+				        repo.AddActionProviderDialog.btnOK.Click();
+				        repo.AddActionproviderWizard.SelfInfo.WaitForExists(new Duration(1000000));
+				        repo.AddActionproviderWizard.btnAPWNext.Click();
+				        repo.AddActionproviderWizard.ddlAPWProvider.Click();
+				        //code for select value from dropdown				        			        				      
+				        repo.AddActionproviderWizard.txtAPWProvidertext.Click();
+				        repo.AddActionproviderWizard.txtAPWProvidertext.Element.SetAttributeValue("Text",ProviderName);
+				        //code for entering text in textbox
+				        repo.AddActionproviderWizard.btnAPWSMTPNext.Click();
+				        repo.AddActionproviderWizard.txtAPWServerName.Click();
+				        //code for entering text into address textbox
+				        repo.AddActionproviderWizard.txtAPWServerName.Element.SetAttributeValue("Text",ProviderAddress);
+				        repo.AddActionproviderWizard.chkAPWAuthentication.Click();
+				        repo.AddActionproviderWizard.txtAPWLoginName.Click();
+				        //code for entering text into username textbox
+				        repo.AddActionproviderWizard.txtAPWLoginName.Element.SetAttributeValue("Text",ProviderUserName);
+				        repo.AddActionproviderWizard.txtAPWPassword.Click();
+				        //code for entering text into password textbox
+				        repo.AddActionproviderWizard.txtAPWPassword.Element.SetAttributeValue("Text",ProviderPassword);
+				         repo.AddActionproviderWizard.txtAPWEmail.Click();
+				        //code for entering text into email textbox
+				         repo.AddActionproviderWizard.txtAPWEmail.Element.SetAttributeValue("Text",ProviderEmail);
+						 repo.AddActionproviderWizard.btnAPWFinish.Click(); 
+				        
+						 repo.SMTPActionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+						repo.SMTPActionDialog.txtSADToAddress.Click();
+						repo.SMTPActionDialog.txtSADToAddress.Element.SetAttributeValue("Text",SMTPToAddress);
+						repo.SMTPActionDialog.btnSADOK.Click();
+				        repo.AlertResponsesDialog.txtARDName.Click();
+				        repo.AlertResponsesDialog.txtARDName.Element.SetAttributeValue("Text",ResponseName);
+				        repo.AlertResponsesDialog.btnARDOK.Click();
+				        repo.AlertActionsandResponsesOptionDialog.btnFinish.Click();
+				        
+				       				       						  					  
+						Reports.ReportLog("Alert Responses are added sucessfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : AddAlertResponses :" + ex.Message);
+					}
+				}	
+		    public static void RemoveAlertResponses()
+         	{
+					try 
+					{
+					
+                     repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));						
+					 Table tbl=repo.AlertActionsandResponsesOptionDialog.tblAlertResponses;
+					   foreach(Row row in tbl.Rows)
+					    {
+					    	foreach ( Cell cell in row.Cells) 
+					    	{
+					    		Report.Info("Cell "+cell.Text);	
+					    		if(cell.Text==ResponseName || cell.Text==EditResponseName || cell.Text==CopyResponseName)
+					    		{
+					    			cell.Click();
+					    			break;
+					    		}
+					    	}
+					      }
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnAlertAndResponseRemove.Click();
+					   repo.ExceptionMessageDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.ExceptionMessageDialog.btnAAROk.Click();
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnFinish.Click();
+					   
+              		      
+						Reports.ReportLog("Alert Responses Removed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : RemoveAlertResponsesFailed :" + ex.Message);
+					}
+				}
+		    public static void CopyAlertResponses()
+         {
+         	try 
+					{
+					
+                     repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));						
+					 Table tbl=repo.AlertActionsandResponsesOptionDialog.tblAlertResponses;
+					   foreach(Row row in tbl.Rows)
+					    {
+					    	foreach ( Cell cell in row.Cells) 
+					    	{
+					    		Report.Info("Cell "+cell.Text);	
+					    		if(cell.Text==ResponseName)
+					    		{
+					    			cell.Click();
+					    			break;
+					    		}
+					    	}
+					      }
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnAlertAndResponseCopy.Click();
+					   repo.AlertResponsesDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertResponsesDialog.btnARDOK.Click();				     
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnFinish.Click();					                 		     
+					   Reports.ReportLog("Alert Responses Copied Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : CopyAlertResponses :" + ex.Message);
+					}
+         }
+		    
+		    public static void EditAlertResponses()
+        {
+        	try 
+					{
+						
+					  Table tbl=repo.AlertActionsandResponsesOptionDialog.tblAlertResponses;
+					   foreach(Row row in tbl.Rows)
+					    {
+					    	foreach ( Cell cell in row.Cells) 
+					    	{
+					    		Report.Info("Cell "+cell.Text);	
+					    		if(cell.Text==ResponseName)
+					    		{
+					    			cell.Click();
+					    			break;
+					    		}
+					    	}
+					      }
+					   
+					   
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnAlertAndResponseEdit.Click();
+					  			      
+				        repo.AlertResponsesDialog.txtARDName.Click();
+				        repo.AlertResponsesDialog.txtARDName.Element.SetAttributeValue("Text",EditResponseName);
+				        
+					   repo.AlertResponsesDialog.btnARDOK.Click(); 
+						 repo.AlertActionsandResponsesOptionDialog.btnFinish.Click();
+				        				   
+					   
+						Reports.ReportLog("Alert Responses are Edited sucessfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+              		      
+						Reports.ReportLog("EditAlertResponses", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : EditAlertResponses :" + ex.Message);
+					}
+        }
+         
+		
+		public static void AddActionProviders()
+				{
+					try 
+					{
+						repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+						repo.AlertActionsandResponsesOptionDialog.btnActAndResAPAdd.Click();
+						repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+						repo.AlertCommunicationsWizardDialog.btnACWNext.Click();
+				        repo.AlertCommunicationsWizardDialog.ddlACWProviderType.Click();
+				        //code for select value from dropdown				        			        				      
+				        repo.AlertCommunicationsWizardDialog.txtACWProviderName.Click();
+				        repo.AlertCommunicationsWizardDialog.txtACWProviderName.Element.SetAttributeValue("Text",ProviderName);
+				        //code for entering text in textbox
+				        repo.AlertCommunicationsWizardDialog.btnACWNext.Click();
+				        repo.AlertCommunicationsWizardDialog.txtACWAddress.Click();
+				        //code for entering text into address textbox
+				        repo.AlertCommunicationsWizardDialog.txtACWAddress.Element.SetAttributeValue("Text",ProviderAddress);
+				        repo.AlertCommunicationsWizardDialog.cbACWServerRequriesAuthn.Click();
+				        repo.AlertCommunicationsWizardDialog.txtACWUserName.Click();
+				        //code for entering text into username textbox
+				        repo.AlertCommunicationsWizardDialog.txtACWUserName.Element.SetAttributeValue("Text",ProviderUserName);
+				        repo.AlertCommunicationsWizardDialog.txtACWPassword.Click();
+				        //code for entering text into password textbox
+				        repo.AlertCommunicationsWizardDialog.txtACWPassword.Element.SetAttributeValue("Text",ProviderPassword);
+				         repo.AlertCommunicationsWizardDialog.txtACWEmail.Click();
+				        //code for entering text into email textbox
+				         repo.AlertCommunicationsWizardDialog.txtACWEmail.Element.SetAttributeValue("Text",ProviderEmail);
+						 repo.AlertCommunicationsWizardDialog.btnACWFinish.Click();  						  					  	 
+						Reports.ReportLog("Action Providers are added sucessfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : AddActionProviders :" + ex.Message);
+					}
+				}	
+		
+		public static void ClickOnAddRemoveInActionProviders()
+				{
+					try 
+					{
+						
+					  Table tbl=repo.AlertActionsandResponsesOptionDialog.tblAlertAndActionsAndResponses;
+					   foreach(Row row in tbl.Rows)
+					    {
+					    	foreach ( Cell cell in row.Cells) 
+					    	{
+					    		Report.Info("Cell "+cell.Text);	
+					    		if(cell.Text==ProviderName || cell.Text==ProviderEditName)
+					    		{
+					    			cell.Click();
+					    			break;
+					    		}
+					    	}
+					      }
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnActAndResAPRemove.Click();
+					   repo.ExceptionMessageDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.ExceptionMessageDialog.btnAAROk.Click();
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnFinish.Click();
+					   
+              		      
+						Reports.ReportLog("ActionProvidersRemovedSuccessfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : ActionProvidersRemovedFailed :" + ex.Message);
+					}
+				}
+		
+			  public static void EditActionProviders()
+        {
+        	try 
+					{
+						
+					  Table tbl=repo.AlertActionsandResponsesOptionDialog.tblAlertAndActionsAndResponses;
+					   foreach(Row row in tbl.Rows)
+					    {
+					    	foreach ( Cell cell in row.Cells) 
+					    	{
+					    		Report.Info("Cell "+cell.Text);	
+					    		if(cell.Text==ProviderName)
+					    		{
+					    			cell.Click();
+					    			break;
+					    		}
+					    	}
+					      }
+					   
+					   
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnActAndResAPEdit.Click();
+//					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+//						repo.AlertCommunicationsWizardDialog.btnACWNext.Click();
+//				        repo.AlertCommunicationsWizardDialog.ddlACWProviderType.Click();
+				        //code for select value from dropdown				        			        				      
+				        repo.SMTPProviderDialog.txtSMTPProviderName.Click();
+				        repo.SMTPProviderDialog.txtSMTPProviderName.Element.SetAttributeValue("Text",ProviderEditName);
+				        
+					   repo.SMTPProviderDialog.btnSMTPOk.Click();  	
+					   
+						Reports.ReportLog("Action Providers are Edited sucessfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+              		      
+						Reports.ReportLog("EditActionProviders", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : EditActionProviders :" + ex.Message);
+					}
+        }
+
+         public static void ClickOnEditRemoveInActionProviders()
+				{
+					try 
+					{
+						
+					  Table tbl=repo.AlertActionsandResponsesOptionDialog.tblRemoveAlertAndActionsAndResponses;
+					   foreach(Row row in tbl.Rows)
+					    {
+					    	foreach ( Cell cell in row.Cells) 
+					    	{
+					    		Report.Info("Cell "+cell.Text);	
+					    		if(cell.Text==ProviderName || cell.Text==ProviderEditName)
+					    		{
+					    			cell.Click();
+					    			break;
+					    		}
+					    	}
+					      }
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnActAndResAPRemove.Click();
+					   repo.ExceptionMessageDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.ExceptionMessageDialog.btnAAROk.Click();
+					   repo.AlertActionsandResponsesOptionDialog.SelfInfo.WaitForExists(new Duration(1000000));
+					   repo.AlertActionsandResponsesOptionDialog.btnFinish.Click();
+					   
+              		      
+						Reports.ReportLog("ActionProvidersRemovedSuccessfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					} 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : ActionProvidersRemovedFailed :" + ex.Message);
+					}
+				}
+						  
+		  
+		   public static void VerifyProcedureCacheInResources()
+			{
+				try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblRESProcedureCacheInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblRESProcedureCacheInfo.Exists())
+					{
+						repo.SQLdm.tblRESProcedureCache.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Procedure Cache In Resources Is:" + repo.SQLdm.tblRESProcedureCache.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Procedure Cache Displayed Successfully In Resources", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Procedure Cache Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyProcedureCacheInResources :" + ex.Message);
+				}
+			}			   
+		    public static void ClickOnDiskInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESDiskInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESDisk.Click();
+				    Reports.ReportLog("Successfully Clicked On Disk In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnDiskInResourcesTab :" + ex.Message);
+				}
+			}
+		    
+		    public static void VerifyDiskViewInResources()
+			{
+				try 
+				{ 
+					
+		            if(repo.SQLdm.TableLayoutPanelInfo.Exists())
+		             {
+		                CompressedImage rsDisk = repo.SQLdm.TableLayoutPanelInfo.GetRESDisk();
+		                Imaging.FindOptions options = Imaging.FindOptions.Default;
+		                RepoItemInfo info = repo.SQLdm.TableLayoutPanelInfo;
+		                bool isvalid = Validate.ContainsImage(info, rsDisk, options,"Disk View image comparision in Resources Tab", false);
+			         }
+			    }
+	            catch (Exception ex)
+	            {
+	                throw new Exception("Failed : VerifyDiskViewInResources  : " + ex.Message);
+	            }
+
+			}
+			
+		    public static void ClickOnMemoryInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESMemoryInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESMemory.Click();
+				    Reports.ReportLog("Successfully Clicked On Memory In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnMemoryInResourcesTab :" + ex.Message);
+				}
+			}
+		    
+		    public static void VerifyMemoryViewInResources()
+			{
+				try 
+				{ 
+					
+		            if(repo.SQLdm.TableLayoutPanelInfo.Exists())
+		             {
+		                CompressedImage rsMemory = repo.SQLdm.TableLayoutPanelInfo.GetRESMemory();
+		                Imaging.FindOptions options = Imaging.FindOptions.Default;
+		                RepoItemInfo info = repo.SQLdm.TableLayoutPanelInfo;
+		                bool isvalid = Validate.ContainsImage(info, rsMemory, options,"Memory View image comparision in Resources Tab", false);
+			         }
+			    }
+	            catch (Exception ex)
+	            {
+	                throw new Exception("Failed : VerifyMemoryViewInResources  : " + ex.Message);
+	            }
+
+			}
+		    
+		      public static void ClickOnCPUInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESCPUInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESCPU.Click();
+				    Reports.ReportLog("Successfully Clicked On CPU In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnCPUInResourcesTab :" + ex.Message);
+				}
+			}
+			 
+		       public static void VerifyCPUViewInResources()
+			{
+				try 
+				{ 
+					
+		            if(repo.SQLdm.TableLayoutPanelInfo.Exists())
+		             {
+		                CompressedImage rsCPU = repo.SQLdm.TableLayoutPanelInfo.GetRESCPU();
+		                Imaging.FindOptions options = Imaging.FindOptions.Default;
+		                RepoItemInfo info = repo.SQLdm.TableLayoutPanelInfo;
+		                bool isvalid = Validate.ContainsImage(info, rsCPU, options,"CPU View image comparision in Resources Tab", false);
+			         }
+			    }
+	            catch (Exception ex)
+	            {
+	                throw new Exception("Failed : VerifyCPUViewInResources  : " + ex.Message);
+	            }
+
+			}		
+public static void VerifyTablesAndIndexesInDataBases()
+			{
+				try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblDBSTablesAndIndexesInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblDBSTablesAndIndexesInfo.Exists())
+					{
+						repo.SQLdm.tblDBSTablesAndIndexes.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Tables and Indexes In DataBases Is:" + repo.SQLdm.tblDBSTablesAndIndexes.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Tables and Indexes View Displayed Successfully in Databases", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Tables and Indexes View Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyTablesAndIndexesInDataBases :" + ex.Message);
+				}
+			}		       
+		   
+		   public static void VerifyMirroringViewInDataBases()
+			{
+				try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblDBSMirroringInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblDBSMirroringInfo.Exists())
+					{
+						repo.SQLdm.tblDBSMirroring.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Mirroring View In DataBases Is:" + repo.SQLdm.tblDBSMirroring.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Mirroring View Displayed Successfully in Databases", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Mirroring View Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyMirroringViewInDataBases :" + ex.Message);
+				}
+			}
+			
+		   public static void VerifyBackupsAndRestoresInDataBases()
+			{
+				try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblDBSBackupsAndRestoresInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblDBSBackupsAndRestoresInfo.Exists())
+					{
+						repo.SQLdm.tblDBSBackupsAndRestores.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Backups And Restores In DataBases Is:" + repo.SQLdm.tblDBSBackupsAndRestores.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Backups And Restores View Displayed Successfully in Databases", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Backups And Restores View Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyBackupsAndRestoresInDataBases :" + ex.Message);
+				}
+			}
+		   		
+		   
 		public static void VerifyImage123()
 		{
 			try

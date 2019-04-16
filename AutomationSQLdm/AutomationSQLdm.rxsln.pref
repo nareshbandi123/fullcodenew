@@ -16,11 +16,10 @@
       <string>e9c89335-0a74-4423-bdd8-867cb208686a</string>
       <string>28d505b6-6704-4f18-ae40-dfd9c24fdcc7</string>
       <string>501312b7-0ef0-479f-8203-40d799536f50</string>
-      <string>d2307165-0fdb-4f26-b281-ca0f4ac1544c</string>
       <string>d3af87b7-65cf-405a-b7de-0f66403fe3b8</string>
       <string>1baf21b8-f274-4f5b-94e6-4ce926db2662</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[Application[]BVT[TC_722141[]TC_722143[]TC_722144[]TC_T722131[]]Commons[]Configuration[]Grooming Modifications[TC_721962[]TC_721963[]TC_721964[]TC_721965[]TC_T721948[]]TestData[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\BVT\TC_T722131\VerifySQLdmUserCanEnableWMIcollectionOption.cs&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\BVT\TC_722138" />
+  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[BVT[TC_T722131[]]Configuration[]Grooming Modifications[TC_721956[]]TestData[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\AutomationSQLdm.rxtst&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\Configuration" />
   <StartupProject value="{61F99090-53F7-41D0-9F8A-6FC8C2262E52}" />
 </Properties>

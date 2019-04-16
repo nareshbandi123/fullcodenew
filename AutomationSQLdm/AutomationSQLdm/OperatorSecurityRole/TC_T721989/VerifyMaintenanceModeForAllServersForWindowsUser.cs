@@ -12,18 +12,19 @@ using Ranorex.Core.Testing;
 using AutomationSQLdm.Base;
 using AutomationSQLdm.Commons;
 
-namespace AutomationSQLdm.OperatorSecurityRole.TC_T721982
+
+namespace AutomationSQLdm.OperatorSecurityRole.TC_T721989
 {
     /// <summary>
-    /// Description of VerifyUserWithViewdataAckAlarmsIsAbleToSnoozeAlerts.
+    /// Description of VerifyMaintenanceModeForAllServersForWindowsUser.
     /// </summary>
-    [TestModule("4BB73B19-A411-466E-8B32-B36229059E3C", ModuleType.UserCode, 1)]
-    public class VerifySnoozeAlertsFor10MinutesForWindowsUser : BaseClass, ITestModule
+    [TestModule("312C6FF6-55A4-403E-8466-8617234F935B", ModuleType.UserCode, 1)]
+    public class VerifyMaintenanceModeForAllServersForWindowsUser : BaseClass, ITestModule
     {
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public VerifySnoozeAlertsFor10MinutesForWindowsUser()
+        public VerifyMaintenanceModeForAllServersForWindowsUser()
         {
             // Do not delete - a parameterless constructor is required!
         }
@@ -52,11 +53,15 @@ namespace AutomationSQLdm.OperatorSecurityRole.TC_T721982
         	  Steps.ClickNextButton();
         	  Steps.ClickFinishButton();
         	  Steps.VerifyWindowsUserAdded();
-        	  Steps.ClickServersInLeftPane();
-			  Steps.RightClickMonitoredServer();
-        	  Steps.ClickSnoozeAlertContextMenu();
-        	  Steps.SetSnoozeAlertTime();
-        	  Steps.VerifyServerSnoozed();
+			  Steps.ClickServersInLeftPane();
+			  Steps.RightClickAllServer();
+        	  Steps.ClickMaintainceModeContextMenu();
+        	  Steps.VerifyMaintainceModeContextMenuItems();
+        	  Steps.EnableMaintainceMode();
+        	  Steps.VerifyMaintainceModeIsChanged();
+        	  //Steps.ClickWindowsUserToDelete();
+        	  //Steps.DeleteAddedUser();
+        	  
         	} 
         	catch (Exception ex)
         	{
@@ -67,7 +72,8 @@ namespace AutomationSQLdm.OperatorSecurityRole.TC_T721982
         		Steps.ClickAdministration();
         		Steps.ClickWindowsUserToDelete();
         	    Steps.DeleteAddedUser();
-        	}
+        	} 
+        	
         	return true;
         }
         
