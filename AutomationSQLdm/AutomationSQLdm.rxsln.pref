@@ -15,11 +15,14 @@
       <string>24953d9d-2012-4d7a-9cbf-e9057dd31440</string>
       <string>e9c89335-0a74-4423-bdd8-867cb208686a</string>
       <string>28d505b6-6704-4f18-ae40-dfd9c24fdcc7</string>
+      <string>d51e70be-b510-4597-b7ba-3ddbae30f06d</string>
+      <string>0a6fc3b9-b05b-4388-8e12-4e087be00f66</string>
       <string>501312b7-0ef0-479f-8203-40d799536f50</string>
       <string>d3af87b7-65cf-405a-b7de-0f66403fe3b8</string>
-      <string>1baf21b8-f274-4f5b-94e6-4ce926db2662</string>
+      <string>db34df95-e9cf-4f20-b04c-3bc2c9802204</string>
+      <string>62160dca-0078-43fb-9227-be0da74ac54b</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[BVT[TC_T722131[]]Configuration[]Grooming Modifications[TC_721956[]]TestData[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\AutomationSQLdm.rxtst&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\Configuration" />
+  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[Base[]BVT[]Commons[]Grooming Modifications[]TestRailAPI[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\AutomationSQLdm.rxtst&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\Grooming Modifications" />
   <StartupProject value="{61F99090-53F7-41D0-9F8A-6FC8C2262E52}" />
 </Properties>

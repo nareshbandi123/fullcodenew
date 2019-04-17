@@ -70,11 +70,12 @@ namespace AutomationSQLdm.Grooming_Modifications.C_T721953
 	        		Reports.ReportLog("Records are not Present in LatestGrooming Status After Groom", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
 	        		
 	        	}
-        		
+        		Common.UpdateStatus(1); // 1 : Pass
 
         	} 
         	catch (Exception ex)
         	{
+        		Common.UpdateStatus(5); // 5 : fail
         		Reports.ReportLog(ex.Message, Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
         	}
         	return true;

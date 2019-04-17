@@ -58,10 +58,11 @@ namespace AutomationSQLdm.Grooming_Modifications.TC_721954
         		Steps.VerifyCompletionStatusInAggregation(CompletionStatus);
         		Steps.ClickOnOk();
         		Steps.VerifyQueryDataCount(Config.Query_DBFileStatisticsAggregation,"DatabaseFileStatisticsAggregation");        		        		
-        		
+        		Common.UpdateStatus(1); // 1 : Pass
         	} 
         	catch (Exception ex)
         	{
+        		Common.UpdateStatus(5); // 5 : fail
         		Reports.ReportLog(ex.Message, Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
         	}
         	return true;

@@ -42,6 +42,8 @@ namespace AutomationSQLdm.BVT
     	public static string ResponseName ="ResponseName";
     	public static string EditResponseName ="NewResponseName";
     	public static string CopyResponseName ="ResponseName(Copy)";
+    	public static string SQLUserName="sa";
+    	public static string SQLPassword="control*88";	
     	
     	public static void VerifySQLdmToday()
 			{
@@ -1730,6 +1732,92 @@ public static void VerifyTablesAndIndexesInDataBases()
 					throw new Exception("Failed : VerifyBackupsAndRestoresInDataBases :" + ex.Message);
 				}
 			}
+		   
+		    public static void RightClickOnServer(string serverName)
+		{
+			try 
+			{
+				repo.Application.AllServersInfo.WaitForItemExists(120000);
+				TreeItem serveritem = repo.Application.AllServers.GetChildItem(serverName);
+				if(serveritem != null) serveritem.RightClick(); 
+			} 
+			catch (Exception ex) 
+			{
+				throw new Exception("Failed : ClickOnAllServers : " + ex.Message);
+			}
+		}
+         
+         public static void TestSQLAuthentication()
+         {
+         	try 
+					{
+					 repo.MonitoredSqlServerInstancePropertiesDial.SelfInfo.WaitForExists(new Duration(1000000));	
+					 repo.MonitoredSqlServerInstancePropertiesDial.rdbsqlauthentication.Click();
+					 repo.MonitoredSqlServerInstancePropertiesDial.txtsqlloginname.Click();
+				     repo.MonitoredSqlServerInstancePropertiesDial.txtsqlloginname.Element.SetAttributeValue("Text",SQLUserName);
+				     repo.MonitoredSqlServerInstancePropertiesDial.txtsqlpwd.Click();
+				     repo.MonitoredSqlServerInstancePropertiesDial.txtsqlpwd.Element.SetAttributeValue("Text",SQLPassword);
+				     repo.MonitoredSqlServerInstancePropertiesDial.btnTest.Click();
+					 if(repo.ExceptionMessageBoxForm.SelfInfo.Exists())
+						{
+					     repo.ExceptionMessageBoxForm.ButtonYes.Click();
+						 Reports.ReportLog("PopupMessage Exists", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+						}
+						else
+						{
+							Reports.ReportLog("PopupMessage does not Exists", Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+							throw new Exception("Failed : VerifyPopupMessage ");
+						}
+				     
+						repo.MonitoredSqlServerInstancePropertiesDial.btnClose.Click();
+				     	Thread.Sleep(360000);
+				    } 
+					catch (Exception ex)
+					{
+					throw new Exception("Failed : CopyAlertResponses :" + ex.Message);
+					}
+         	
+         }
+         
+            public static void VerifySummarygraphsUnderSessions()
+        {
+        	try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.txtSUMResponseTimeInfo.WaitForExists(new Duration(1000000));
+				    if (repo.SQLdm.txtSUMResponseTime.TextValue == "Response Time")
+						Reports.ReportLog("Response Time View Under Sessions Displayed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					else
+						Reports.ReportLog("Response Time View Under Sessions Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					
+					 repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.txtSumSessionsInfo.WaitForExists(new Duration(1000000));
+				    if (repo.SQLdm.txtSumSessions.TextValue == "Sessions")
+						Reports.ReportLog("Sessions View Under Sessions Displayed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					else
+						Reports.ReportLog("Sessions View Under Sessions Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					
+					 repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.txtSUMLockStatisticsInfo.WaitForExists(new Duration(1000000));
+				    if (repo.SQLdm.txtSUMLockStatistics.Text == "Lock Statistics: Requests")
+						Reports.ReportLog("Lock Statistics View Under Sessions Displayed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					else
+						Reports.ReportLog("Lock Statistics View Under Sessions Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					
+					 repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.txtSUMBlockedSessionsInfo.WaitForExists(new Duration(1000000));
+				    if (repo.SQLdm.txtSUMBlockedSessions.TextValue == "Blocked Sessions")
+						Reports.ReportLog("Blocked Sessions View Under Sessions Displayed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					else
+						Reports.ReportLog("Blocked Sessions View Under Sessions Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);        
+        	}
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifySummarygraphsUnderSessions :" + ex.Message);
+				}
+             }
+      
 		   		
 		   
 		public static void VerifyImage123()

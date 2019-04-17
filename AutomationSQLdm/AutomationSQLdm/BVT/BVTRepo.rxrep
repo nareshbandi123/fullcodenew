@@ -4133,6 +4133,20 @@ AAAAAAAAABiKEP4PL9Uva6cOhYIAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//list[@automationid='toolsMenu']/picture[@automationid='HeaderPresenter']/text[@caption='Tools']
 			</item>
+			<item
+			capname="text"
+			id="188cd2d4-3fae-400d-aa5c-1def0e789ebc"
+			name="txtSUMBlockedSessions"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']/statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='blockedSessionsPanel']/toolbar[@controlname='blockedSessionsHeaderStrip']/text[@accessiblename='Blocked Sessions']
+			</item>
+			<item
+			capname="menuitem"
+			id="6209cf2b-f70d-42fe-b313-f4d92666c7d6"
+			name="txtSUMLockStatistics"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='lockStatisticsPanel']/toolbar[@controlname='lockStatisticsHeaderStrip']/menuitem[@accessiblename='Lock Statistics: Requests']
+			</item>
 			<basepath>
 				//form[@title~'^Idera\ SQL\ diagnostic\ mana']
 			</basepath>
@@ -4283,6 +4297,106 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 				id="b69e423f-19ea-4d62-ada1-891b31aeb7bb"
 				name="WmiTestButton"
 				refimgid="57134f5d-221a-4d62-9e6b-6df2bc38a21c"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='osPropertyPage']//container[@controlname='wmiCredentialsSecondaryContainer']///button[@controlname='wmiTestButton']
+				</item>
+				<basepath>
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='osPropertyPage']
+				</basepath>
+			</folder>
+			<item
+			capname="radiobutton"
+			id="844b935e-0036-415d-ac59-3cb462f3e281"
+			name="rdbsqlauthentication"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//container[@controlname='propertiesControl']//container[@controlname='popularPropertyPage']/?/?/container[@controlname='tableLayoutPanel6']/radiobutton[@controlname='useSqlServerAuthenticationRadioButton']
+			</item>
+			<item
+			capname="text"
+			id="e5d3dda6-9a53-4a14-b1e1-2cf5d52af411"
+			name="txtsqlloginname"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//container[@controlname='propertiesControl']//container[@controlname='popularPropertyPage']/?/?/container[@controlname='tableLayoutPanel6']/?/?/text[@accessiblename='Login name:']
+			</item>
+			<item
+			capname="text"
+			id="78744f6d-31b5-4745-bf3b-a930841a1470"
+			name="txtsqlpwd"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//container[@controlname='propertiesControl']//container[@controlname='popularPropertyPage']/?/?/container[@controlname='tableLayoutPanel6']/?/?/text[@accessiblename='Password:']
+			</item>
+			<item
+			capname="button"
+			id="aa481bd6-989d-46ca-a0d1-1361fd20000e"
+			name="btnTest"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//container[@controlname='propertiesControl']//container[@controlname='popularPropertyPage']/?/?/container[@controlname='tableLayoutPanel6']/button[@controlname='testConnectionCredentialsButton']
+			</item>
+			<item
+			capname="button"
+			id="e2eb19d4-b732-4d04-9ff3-82983f42f618"
+			name="btnOk"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@controlname='okButton']
+			</item>
+			<item
+			capname="button"
+			id="6dfbb509-8f40-4ec0-a42b-f2684b3624ad"
+			name="btnClose"
+			searchtimeout="30000ms">
+				/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']//button[@accessiblename='Close']
+			</item>
+			<folder
+			addcaps="container,control,nativewindow"
+			capname="container"
+			id="e8fa8c3c-8494-41f2-bd3b-8084ed6734b0"
+			isrooted="True"
+			name="Copy_of_OsPropertyPage"
+			refpath="/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']/container[@controlname='splitContainer']/container[@controlname='panel2']/container[@controlname='osPropertyPage']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="05d88346-e1d8-4d6e-912a-5ecbcebe052b"
+				name="SqldmServiceAccount"
+				refimgid="5d8fe448-e38a-45ff-8708-3c37e2b9cb49"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='osPropertyPage']//container[@controlname='wmiCredentialsSecondaryContainer']//checkbox[@controlname='optionWmiCSCreds']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="5ae836ff-048d-486c-ae02-060adf790064"
+				name="UserName"
+				refimgid="4ad048a9-3f6f-43e2-b791-570b38af705e"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='osPropertyPage']//container[@controlname='wmiCredentialsSecondaryContainer']//text[@controlname='directWmiUserName']/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="15b1aac7-b02b-41fd-b2fc-095f9c5c6968"
+				name="OptionWmiDirect"
+				refimgid="6c3f5126-3c7a-4933-b18e-a9582f068fce"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='osPropertyPage']//radiobutton[@controlname='optionWmiDirect']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="cb58ef4d-9215-4f60-826a-4e7931fce847"
+				name="Password"
+				refimgid="bcf5fa11-8359-4f6a-b5c6-3b74a17b1074"
+				searchtimeout="30000ms">
+					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='osPropertyPage']//container[@controlname='wmiCredentialsSecondaryContainer']//text[@controlname='directWmiPassword']/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="14dec1bf-b081-45b6-9ec9-fd88b80c9554"
+				name="WmiTestButton"
+				refimgid="a0ded10a-bf6d-4064-8374-4db61667f604"
 				searchtimeout="30000ms">
 					/form[@controlname='MonitoredSqlServerInstancePropertiesDialog']/container[@controlname='propertiesControl']//container[@controlname='osPropertyPage']//container[@controlname='wmiCredentialsSecondaryContainer']///button[@controlname='wmiTestButton']
 				</item>

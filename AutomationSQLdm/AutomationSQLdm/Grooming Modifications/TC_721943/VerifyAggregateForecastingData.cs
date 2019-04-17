@@ -21,7 +21,6 @@ namespace AutomationSQLdm.Grooming_Modifications.TC_721943
     [TestModule("67CF26E9-3F8F-44EE-876B-1606A1900202", ModuleType.UserCode, 1)]
     public class VerifyAggregateForecastingData : Base.BaseClass, ITestModule
     {
-       
         public VerifyAggregateForecastingData()
         {
         }
@@ -40,10 +39,11 @@ namespace AutomationSQLdm.Grooming_Modifications.TC_721943
         		Steps.SelectGroomingOption();
         		Steps.VerifyAggregateforecastingValue();
         		Steps.ClickOnCancel();
-
+        		Common.UpdateStatus(1); // 1 : Pass
         	} 
         	catch (Exception ex)
         	{
+        		Common.UpdateStatus(5); // 5 : fail
         		Reports.ReportLog(ex.Message, Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
         	}
         	return true;

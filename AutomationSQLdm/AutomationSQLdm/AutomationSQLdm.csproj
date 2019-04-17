@@ -34,6 +34,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Bootstrapper">
       <Private>False</Private>
     </Reference>
@@ -146,6 +149,18 @@
     </Compile>
     <Compile Include="BVT\Steps.cs">
       <id>4f4d7609-24f4-4588-9914-7943fa6ff22b</id>
+    </Compile>
+    <Compile Include="BVT\TC_722021\VerifyquerydatacollectionInQueriesSignatureMode.cs">
+      <id>946a52ed-6bc5-4ebe-aa0a-4cec7930d597</id>
+    </Compile>
+    <Compile Include="BVT\TC_722022\Verifyquerydatacollectionhappensononaninstanceconnectedwithuserwithoutsysadminpermission.cs">
+      <id>11c7ea76-afd9-47ec-80be-6dac74a2d678</id>
+    </Compile>
+    <Compile Include="BVT\TC_722023\Verifyquerydatacollectionhappensononaninstanceconnectedwithuserwithoutsysadminpermission.cs">
+      <id>4b91f7d4-2078-4e86-ab6b-24e06d2c3066</id>
+    </Compile>
+    <Compile Include="BVT\TC_722044\Verifydatacollectionhappensonallwidgetsonaninstanceconnectedwithuserwithoutsysadminpermission.cs">
+      <id>e9cb50c1-20c9-4d2f-8469-71178fd6ecde</id>
     </Compile>
     <Compile Include="BVT\TC_722114\BVTVerifyanactionprovidercanbeRemovedSuccessfully.cs">
       <id>95a8c363-a3ab-45c6-8289-5f3f52363f1d</id>
@@ -417,6 +432,15 @@
     <Compile Include="QueryPlan\TC_722069\Inputinvaliddataincollectqueryplanscountandverifychangescantbesaved.cs">
       <id>4f77f1fa-30d6-467d-acc3-e3181ef5802c</id>
     </Compile>
+    <Compile Include="TestRailAPI\APIClient.cs">
+      <id>f372d424-5d9d-46f5-99e8-27b22423ebee</id>
+    </Compile>
+    <Compile Include="TestRailAPI\APIException.cs">
+      <id>40fc30e0-a779-46bb-af30-23ebecb94c92</id>
+    </Compile>
+    <Compile Include="TestRailAPI\Rail.cs">
+      <id>3cd3259a-28d5-41e7-be60-803d4638bf62</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -493,6 +517,9 @@
       <BoundTo>e56409ae-2a07-4a4b-8e19-290c345bd67e</BoundTo>
       <recordtableid>e461a081-13dd-49a1-be04-7dd1624076d3</recordtableid>
     </None>
+    <None Include="packages.config">
+      <id>9e1f9266-1960-4090-8918-4f7a3a24d474</id>
+    </None>
     <None Include="QueryPlan\QueryPlanRepo.rximg">
       <DependentUpon>QueryPlanRepo.rxrep</DependentUpon>
       <id>c31761fe-e528-4f72-88b5-91ebb0fcfd26</id>
@@ -524,6 +551,18 @@
     </Folder>
     <Folder Include="Base">
       <id>ef5cd861-297c-44b3-a2dd-d36529c4ce01</id>
+    </Folder>
+    <Folder Include="BVT\TC_722044">
+      <id>bca5d0d1-f6e4-49b8-93d2-a90bd420142f</id>
+    </Folder>
+    <Folder Include="BVT\TC_722023">
+      <id>7b3b47b8-aa67-4d98-9f10-778b15e91402</id>
+    </Folder>
+    <Folder Include="BVT\TC_722022">
+      <id>05642562-e05c-48cf-9629-9641dd9cd6ae</id>
+    </Folder>
+    <Folder Include="BVT\TC_722021">
+      <id>a391cb12-15bf-418f-a8f3-3fff91bd2c8f</id>
     </Folder>
     <Folder Include="BVT\TC_722120">
       <id>9a2a5054-eeb9-417c-9472-33d1ee9e214f</id>
@@ -698,6 +737,9 @@
     </Folder>
     <Folder Include="BVT">
       <id>435ace51-31ae-4bef-bf4d-5d490d806462</id>
+    </Folder>
+    <Folder Include="TestRailAPI">
+      <id>ef133857-78f0-4eb7-a7cd-526159e9ff32</id>
     </Folder>
     <Folder Include="OperatorSecurityRole\TC_T721989">
       <id>186ee7f4-ef95-49fe-9769-a252f72a8fe6</id>

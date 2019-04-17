@@ -1,13 +1,4 @@
-﻿/*
- * Created by Ranorex
- * User: administrator
- * Date: 3/22/2019
- * Time: 2:22 AM
- * 
- * To change this template use Tools > Options > Coding > Edit standard headers.
- */
-
-using System;
+﻿using System;
 using System.Threading;
 using System.Drawing;
 using System.Collections.Generic;
@@ -18,6 +9,8 @@ using Ranorex;
 using Ranorex.Core;
 using Ranorex.Core.Reporting;
 using Ranorex.Core.Testing;
+using System.Configuration;
+using AutomationSQLdm.TestRailAPI;
 
 namespace AutomationSQLdm
 {
@@ -36,6 +29,10 @@ namespace AutomationSQLdm
 
             try
             {
+            	
+            	ConfigureTestRail();
+            	
+            	
                 error = TestSuiteRunner.Run(typeof(Program), Environment.CommandLine);
             }
             catch (Exception e)
@@ -44,6 +41,31 @@ namespace AutomationSQLdm
                 error = -1;
             }
             return error;
+        }
+        
+        
+        static void ConfigureTestRail()
+        {
+        	Rail rail = new Rail();
+        	string runId = ConfigurationManager.AppSettings["RUN_ID"].ToString();
+        	string isTRailEnabled = ConfigurationManager.AppSettings["TESTRAIL_ENABLED"].ToString();
+        	string isGenerateRunID = ConfigurationManager.AppSettings["GENERATE_RUN"].ToString();
+        	
+        	if(isTRailEnabled.ToLower() == "true")
+        	{
+        		if(string.IsNullOrEmpty(runId) && isGenerateRunID.ToLower() == "true")
+	        	{
+        			rail.AddRun();
+	        	}
+        		else if(string.IsNullOrEmpty(runId) && isGenerateRunID.ToLower() == "false")
+	        	{
+        			rail.GetRunId();
+	        	}
+        		else if (!string.IsNullOrEmpty(runId)) 
+        		{
+        			// do nothing
+        		}
+        	}
         }
     }
 }
