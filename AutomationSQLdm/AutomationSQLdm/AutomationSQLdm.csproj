@@ -150,6 +150,15 @@
     <Compile Include="BVT\Steps.cs">
       <id>4f4d7609-24f4-4588-9914-7943fa6ff22b</id>
     </Compile>
+    <Compile Include="BVT\TC_722018\VerifydatacollectionhappensonallwidgetsonaninstanceconnectedwithuserwithoutsysadminpermissionandshowsdataonSessions.cs">
+      <id>21654dc6-dfe7-4438-a9da-3afb7f736f1e</id>
+    </Compile>
+    <Compile Include="BVT\TC_722019\VerifydatacollectionhappensandshowsdataonSessionsLocks.cs">
+      <id>222cea2a-0681-49df-b84f-aa5a20932c9d</id>
+    </Compile>
+    <Compile Include="BVT\TC_722020\VerifydatacollectionhappensshowsdataonSessionsBlocking.cs">
+      <id>b93ed2ae-b4f4-4272-beab-a7bb0e81a223</id>
+    </Compile>
     <Compile Include="BVT\TC_722021\VerifyquerydatacollectionInQueriesSignatureMode.cs">
       <id>946a52ed-6bc5-4ebe-aa0a-4cec7930d597</id>
     </Compile>
@@ -551,6 +560,18 @@
     </Folder>
     <Folder Include="Base">
       <id>ef5cd861-297c-44b3-a2dd-d36529c4ce01</id>
+    </Folder>
+    <Folder Include="BVT\TC_722025">
+      <id>1c6d623b-ae14-4952-9484-a892284d8d22</id>
+    </Folder>
+    <Folder Include="BVT\TC_722020">
+      <id>0a4f52d5-88af-4a3e-80b9-1d9d3ac24f71</id>
+    </Folder>
+    <Folder Include="BVT\TC_722019">
+      <id>256f7f67-a7b8-4578-9357-c4b25a3d2ab9</id>
+    </Folder>
+    <Folder Include="BVT\TC_722018">
+      <id>67d95f15-5c56-4ac2-b8d7-e69e990b1e3c</id>
     </Folder>
     <Folder Include="BVT\TC_722044">
       <id>bca5d0d1-f6e4-49b8-93d2-a90bd420142f</id>

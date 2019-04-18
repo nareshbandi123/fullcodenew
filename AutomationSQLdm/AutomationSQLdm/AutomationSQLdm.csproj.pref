@@ -4,7 +4,6 @@
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="Grooming Modifications\TC_721954\VerifyDBFileStatisticsTableIsAggregated.cs" />
     <Element value="AutomationSQLdm.rxtst" />
   </Array>
   <Properties name="projectSavedData">
