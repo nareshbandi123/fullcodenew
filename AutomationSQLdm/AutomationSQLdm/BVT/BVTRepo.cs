@@ -468,6 +468,7 @@ namespace AutomationSQLdm.BVT
             RepoItemInfo _toolsInfo;
             RepoItemInfo _txtsumblockedsessionsInfo;
             RepoItemInfo _txtsumlockstatisticsInfo;
+            RepoItemInfo _ddlresdisksizeInfo;
 
             /// <summary>
             /// Creates a new SQLdm  folder.
@@ -521,6 +522,7 @@ namespace AutomationSQLdm.BVT
                 _toolsInfo = new RepoItemInfo(this, "Tools", ".//list[@automationid='toolsMenu']/picture[@automationid='HeaderPresenter']/text[@caption='Tools']", 30000, null, "9f64d8de-8789-44f5-bf17-56ca539b4bed");
                 _txtsumblockedsessionsInfo = new RepoItemInfo(this, "txtSUMBlockedSessions", "statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='blockedSessionsPanel']/toolbar[@controlname='blockedSessionsHeaderStrip']/text[@accessiblename='Blocked Sessions']", 30000, null, "188cd2d4-3fae-400d-aa5c-1def0e789ebc");
                 _txtsumlockstatisticsInfo = new RepoItemInfo(this, "txtSUMLockStatistics", ".//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='lockStatisticsPanel']/toolbar[@controlname='lockStatisticsHeaderStrip']/menuitem[@accessiblename='Lock Statistics: Requests']", 30000, null, "6209cf2b-f70d-42fe-b313-f4d92666c7d6");
+                _ddlresdisksizeInfo = new RepoItemInfo(this, "ddlRESDiskSize", ".//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='ResourcesDiskSizeView']//toolbar[@controlname='driveStatisticsHeaderStrip']/menuitem[@accessiblename~'^Current\\ Disk\\ Usage:\\ Megab']", 30000, null, "d204e29f-6b7b-4aca-84d5-98ed59863005");
             }
 
             /// <summary>
@@ -1602,6 +1604,30 @@ namespace AutomationSQLdm.BVT
                 get
                 {
                     return _txtsumlockstatisticsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ddlRESDiskSize item.
+            /// </summary>
+            [RepositoryItem("d204e29f-6b7b-4aca-84d5-98ed59863005")]
+            public virtual Ranorex.MenuItem ddlRESDiskSize
+            {
+                get
+                {
+                    return _ddlresdisksizeInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ddlRESDiskSize item info.
+            /// </summary>
+            [RepositoryItemInfo("d204e29f-6b7b-4aca-84d5-98ed59863005")]
+            public virtual RepoItemInfo ddlRESDiskSizeInfo
+            {
+                get
+                {
+                    return _ddlresdisksizeInfo;
                 }
             }
 

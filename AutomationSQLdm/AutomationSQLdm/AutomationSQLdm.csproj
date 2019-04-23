@@ -168,6 +168,33 @@
     <Compile Include="BVT\TC_722023\Verifyquerydatacollectionhappensononaninstanceconnectedwithuserwithoutsysadminpermission.cs">
       <id>4b91f7d4-2078-4e86-ab6b-24e06d2c3066</id>
     </Compile>
+    <Compile Include="BVT\TC_722025\Verifydatacollectionhappensandshowsdata.cs">
+      <id>7bd100c3-99c8-4d33-ab18-07a5354773c3</id>
+    </Compile>
+    <Compile Include="BVT\TC_722026\Verifydatacollectionhappensonaninstanceconnectedwithuserwithoutsysadminpermissionandshowsdata.cs">
+      <id>becf1fc6-08ce-49cb-87a4-8b1baa33f39c</id>
+    </Compile>
+    <Compile Include="BVT\TC_722027\VerifydatacollectionhappensonaninstanceconnectedwithuserwithoutsysadminpermissionandshowsdataonMemoryscreen.cs">
+      <id>cf8b7e16-4ebc-432e-b014-89aa2f7286f9</id>
+    </Compile>
+    <Compile Include="BVT\TC_722028\VerifydatacollectionhappensonaninstanceconnectedwithuserwithoutsysadminpermissionandshowsdataonDiskscreen.cs">
+      <id>b87d2659-8504-494f-8e51-4ebc35916739</id>
+    </Compile>
+    <Compile Include="BVT\TC_722029\VerifydatacollectionhappensonaninstanceconnectedwithuserwithoutsysadminpermissionandshowsdataonDiskSizescreen.cs">
+      <id>b8882be0-79e2-456a-886f-ebbcea040406</id>
+    </Compile>
+    <Compile Include="BVT\TC_722030\VerifydatacollectionhappensonaninstanceconnectedwithuserwithoutsysadminpermissionandshowsdataonFileActivityscreen.cs">
+      <id>0d2142aa-dd8d-4490-b17c-c4c1d6b01de0</id>
+    </Compile>
+    <Compile Include="BVT\TC_722031\VerifydatacollectionhappensononaninstanceconnectedwithuserwithoutsysadminpermissionandshowsdataonProcedureCachescreen.cs">
+      <id>c6cdb4d8-4de1-4a43-92d8-a94201afef6b</id>
+    </Compile>
+    <Compile Include="BVT\TC_722032\VerifydatacollectionandshowsdataonServerWaitsscreen.cs">
+      <id>b1c25631-0cf8-44dc-bba4-49d2c4a2d8c9</id>
+    </Compile>
+    <Compile Include="BVT\TC_722033\VerifyquerydataconnectedwithuserandshowsdataonSummaryscreen.cs">
+      <id>3cf621d9-aef8-45b2-807e-557a526481c5</id>
+    </Compile>
     <Compile Include="BVT\TC_722044\Verifydatacollectionhappensonallwidgetsonaninstanceconnectedwithuserwithoutsysadminpermission.cs">
       <id>e9cb50c1-20c9-4d2f-8469-71178fd6ecde</id>
     </Compile>
@@ -417,6 +444,9 @@
     <Compile Include="OperatorSecurityRole\TC_T721989\VerifyMaintenanceModeForAllServersForWindowsUser.cs">
       <id>0cf1190a-22d1-40af-bfc9-2e016c33306f</id>
     </Compile>
+    <Compile Include="OperatorSecurityRole\TC_T721990\VerifySnoozeAlertsAllServerSqlUser.cs">
+      <id>7747becd-1cf9-4145-b512-0d26989bc25d</id>
+    </Compile>
     <Compile Include="OperatorSecurityRole\TC_T721992\VerifySnoozeAlertsForFewMinutesForSqlUser.cs">
       <id>cec1d725-3f7b-4b04-882d-0f615cd343a2</id>
     </Compile>
@@ -560,6 +590,30 @@
     </Folder>
     <Folder Include="Base">
       <id>ef5cd861-297c-44b3-a2dd-d36529c4ce01</id>
+    </Folder>
+    <Folder Include="BVT\TC_722033">
+      <id>cf2fdcda-c026-4a64-8114-44119164f62c</id>
+    </Folder>
+    <Folder Include="BVT\TC_722032">
+      <id>365b16cd-b11d-4ab7-b21b-0ec452cfed29</id>
+    </Folder>
+    <Folder Include="BVT\TC_722031">
+      <id>50cdf668-2047-4fda-b553-cf6889748a9e</id>
+    </Folder>
+    <Folder Include="BVT\TC_722028">
+      <id>0c693408-e214-4380-8159-107dc370551b</id>
+    </Folder>
+    <Folder Include="BVT\TC_722027">
+      <id>c0e8f708-922b-4cbc-918f-1c572421a0b8</id>
+    </Folder>
+    <Folder Include="BVT\TC_722026">
+      <id>01f97181-a0b1-4b2f-b667-36ead09b81c0</id>
+    </Folder>
+    <Folder Include="BVT\TC_722030">
+      <id>abee23c0-5716-42a1-86b1-5d7b521cf442</id>
+    </Folder>
+    <Folder Include="BVT\TC_722029">
+      <id>188f64d6-ad22-4ac1-b5cd-39f40076ddb7</id>
     </Folder>
     <Folder Include="BVT\TC_722025">
       <id>1c6d623b-ae14-4952-9484-a892284d8d22</id>
@@ -758,6 +812,9 @@
     </Folder>
     <Folder Include="BVT">
       <id>435ace51-31ae-4bef-bf4d-5d490d806462</id>
+    </Folder>
+    <Folder Include="OperatorSecurityRole\TC_T721990">
+      <id>d13c23b5-c19f-4806-88c3-352149232bec</id>
     </Folder>
     <Folder Include="TestRailAPI">
       <id>ef133857-78f0-4eb7-a7cd-526159e9ff32</id>

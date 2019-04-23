@@ -1747,7 +1747,43 @@ public static void VerifyTablesAndIndexesInDataBases()
 			}
 		}
          
-         public static void TestSQLAuthentication()
+		    
+			   public static void ClickOnDiskSizeInResourcesTab()
+			{
+				try 
+				{
+					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESDiskSizeInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.ResourcesTab.rgRESDiskSize.Click();
+				    Reports.ReportLog("Successfully Clicked On DiskSize In Resources Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnDiskSizeInResourcesTab :" + ex.Message);
+				}
+			} 
+			   
+			 public static void VerifyDiskSizeViewInResources()
+			  {
+				try 
+				{									  
+					if (repo.SQLdm.ddlRESDiskSizeInfo.Exists())
+						
+						Reports.ReportLog("Current Disk Usage Under Resourses Displayed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					else
+						Reports.ReportLog("Current Disk Usage Under Resourses Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyDiskSizeViewInResources :" + ex.Message);
+				}
+
+			}
+			
+			   
+          public static void TestSQLAuthentication()
          {
          	try 
 					{
