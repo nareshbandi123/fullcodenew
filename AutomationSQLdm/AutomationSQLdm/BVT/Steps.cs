@@ -521,7 +521,23 @@ namespace AutomationSQLdm.BVT
 					throw new Exception("Failed : ClickOnTempDBSummary :" + ex.Message);
 				}
 			}
-			 
+			 public static void ClickOnAvailabilityGroupInDB()
+			{
+				try 
+				{ 					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.DatabasesTab.rgDBAvailabillityGroupInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.DatabasesTab.rgDBAvailabillityGroup.Click();
+				    Reports.ReportLog("Successfully Clicked On Availability Group in Databases", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnAvailabilityGroupInDB :" + ex.Message);
+				}
+			}
+			  
+			  
 			   public static void ClickOnSummaryInDB()
 			{
 				try 
@@ -757,7 +773,29 @@ namespace AutomationSQLdm.BVT
 				}
 			}
 			
-			
+			public static void VerifyAvailabilityGroupInDatabases()
+			{
+				try 
+				{
+					repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tblDBSTempDBSummaryInfo.WaitForItemExists(1000000);
+				    
+				    if (repo.SQLdm.tblDBSTempDBSummaryInfo.Exists())
+					{
+						repo.SQLdm.tblDBSTempDBSummary.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in Availability Group In DataBases Is:" + repo.SQLdm.tblDBSTempDBSummary.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog("Availability Group In Databases Displayed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Verify Availability Group In Databases Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : VerifyAvailabilityGroupInDatabases :" + ex.Message);
+				}
+			}
 			
 			public static void VerifyConfigurationInDataBases()
 			{
@@ -1048,6 +1086,21 @@ namespace AutomationSQLdm.BVT
 					throw new Exception("Failed : ClickOnServicesTab :" + ex.Message);
 				}
 			  } 
+		      
+		       public static void ClickOnLogsTab()
+			{
+				try 
+				{					
+				    repo.SQLdm.SelfInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tabLogsInfo.WaitForExists(new Duration(1000000));
+				    repo.SQLdm.tabLogs.Click();
+				    Reports.ReportLog("Successfully Clicked On Logs Tab", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);					
+				} 
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : ClickOnLogsTab :" + ex.Message);
+				}
+			}
 		      
 		       public static void VerifySummaryInServices()
 			  {
@@ -1661,7 +1714,7 @@ namespace AutomationSQLdm.BVT
 	            }
 
 			}		
-public static void VerifyTablesAndIndexesInDataBases()
+          public static void VerifyTablesAndIndexesInDataBases()
 			{
 				try 
 				{
@@ -1806,7 +1859,7 @@ public static void VerifyTablesAndIndexesInDataBases()
 						}
 				     
 						repo.MonitoredSqlServerInstancePropertiesDial.btnClose.Click();
-				     	Thread.Sleep(360000);
+				     	Thread.Sleep(6000);
 				    } 
 					catch (Exception ex)
 					{
@@ -1881,6 +1934,36 @@ public static void VerifyTablesAndIndexesInDataBases()
 			}
 
 	   }  
+		
+		
+		public static void Verifydataonspecificdatabaseinconfiguration()
+		{
+			try 
+				{									  
+				
+					repo.SQLdm.ddlConfiguration.Click();
+					
+				    repo.SQLdm.tblDatabaseConfigurationInfo.WaitForItemExists(1000000);
+				    
+					if (repo.SQLdm.tblDatabaseConfiguration.Rows.Count >= 0 )
+					{
+						repo.SQLdm.tblDatabaseConfiguration.Rows[0].Click();
+						Reports.ReportLog("No Of Records Present in selected Data base Is:" + repo.SQLdm.tblDatabaseConfiguration.Rows.Count, Reports.SQLdmReportLevel.Info, null, Config.TestCaseName);
+						Reports.ReportLog(" Selected Data base Displayed Successfully", Reports.SQLdmReportLevel.Success, null, Config.TestCaseName);
+					}
+					else
+					{
+						Reports.ReportLog("Selected Data base Is Not Displaying", Reports.SQLdmReportLevel.Fail, null, Config.TestCaseName);
+					}
+						
+				}
+				catch (Exception ex)
+				{
+					throw new Exception("Failed : Verifydataonspecificdatabaseinconfiguration :" + ex.Message);
+				}
+			
+		}
+		
           
     }
 }

@@ -15,6 +15,12 @@ rxversion="8.2">
 			id="00760c4e-2dac-446d-9db9-e42cfc6274fc"
 			name="T721963">
 			</smartfoldernode>
+			<testmodule
+			id="00770db9-d5c8-4293-9333-2b4d4594826f"
+			name="VerifyquerydataconnectedwithuserandshowsdataonTempdbSummaryscreen"
+			ref="e0f020e6-5415-4eec-9719-b60386d3b74a"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="00cc335b-488d-4b98-b76a-3e105f81c4d7"
 			name="Verify_that_Sessions_Details_view_is_displayed_successfully">
@@ -89,6 +95,12 @@ rxversion="8.2">
 			id="04cedb4b-43d2-439c-9384-ff209a364cfa"
 			name="verify_DiskDriveStatistics_is_aggregated">
 			</testcase>
+			<testmodule
+			id="055589e0-8db7-49eb-a52f-e73cc90a5a32"
+			name="VerifyquerydatacollectionhappensandshowsdataonFilesscreen"
+			ref="3e9befbc-ca51-40b7-a52c-2d01f5c6c717"
+			type="UserCode">
+			</testmodule>
 			<teardown
 			id="058bd4ce-ac8c-456c-9da0-5a022353bcd6"
 			name="teardown">
@@ -101,6 +113,10 @@ rxversion="8.2">
 			id="0645da8e-90f5-40f0-b1cd-cfd1e4612aca"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="06696590-b8f9-46de-b9ef-5511646617ce"
+			name="Verify_query_data_connected_with_user_and_shows_data_on_Tempdb_Summary_screen">
+			</testcase>
 			<setup
 			id="06b22905-6d48-474b-a718-8421c705a1c5"
 			name="setup">
@@ -143,6 +159,10 @@ rxversion="8.2">
 			id="097b42d2-67a9-4c3a-a485-e13cbab53ac9"
 			name="setup">
 			</setup>
+			<setup
+			id="09859acb-bbf6-4152-a4c3-3f77d5eea346"
+			name="setup">
+			</setup>
 			<testmodule
 			id="098d001d-3ef3-4b06-9294-25c621d6b7ed"
 			name="VerifyDatabasesBackupsRestoresViewIsDisplayedSuccessfully"
@@ -155,6 +175,10 @@ rxversion="8.2">
 			</setup>
 			<teardown
 			id="09a56178-b7fc-40f7-8831-43b2d3f1770c"
+			name="teardown">
+			</teardown>
+			<teardown
+			id="09ceb41a-ce8a-43b7-a7bf-7e20a639fd03"
 			name="teardown">
 			</teardown>
 			<smartfoldernode
@@ -215,6 +239,12 @@ rxversion="8.2">
 			id="0df4eb6a-8142-48ae-9f86-8f66ae75f377"
 			name="T722023">
 			</smartfoldernode>
+			<testmodule
+			id="0e1743ae-6be6-4a1c-9c28-204ab64f3bbf"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="0e55ab9d-eb87-442f-a8df-d6bd66627901"
 			name="Verify_three_metrics_Disk_Space,_Table_Space,_Database_space_associated_tables">
@@ -223,10 +253,18 @@ rxversion="8.2">
 			id="0f9ff806-2e69-459d-b150-4f70660dfd58"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="0fca66f4-eb4c-42a8-8d32-66dbdbc5a552"
+			name="T722035">
+			</smartfoldernode>
 			<testcase
 			id="108e23af-36b4-40f8-a0ea-7f4cae06e41d"
 			name="Query_Monitor_Top_Query_Plans:_Input_invalid_data_in_collect_query_plans_count_and_verify_changes_ca">
 			</testcase>
+			<setup
+			id="1197157e-bc6c-426c-8e92-e5aa1802e9ef"
+			name="setup">
+			</setup>
 			<testmodule
 			enabled="False"
 			id="133b6949-7361-4b23-b61e-22db0c05d900"
@@ -350,6 +388,12 @@ rxversion="8.2">
 			id="1cf312d5-c842-4ddd-a643-774b0af7e607"
 			name="T722150">
 			</smartfoldernode>
+			<testmodule
+			id="1da05469-c3e3-4644-ad01-04662d1c0fb0"
+			name="VerifydatacollectionhappensandshowsdataonConfigurationscreen"
+			ref="120537f6-5c3b-4c46-94dc-27a2216ed18e"
+			type="UserCode">
+			</testmodule>
 			<setup
 			id="1ef97c6d-c048-43f3-b131-845ccdae4369"
 			name="setup">
@@ -364,6 +408,10 @@ rxversion="8.2">
 			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="203f1f62-8a41-4ae7-be36-866ff5641af6"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="208bffe8-5e46-4acf-a9b0-eac234603b3c"
 			name="CloseSQLdm"
@@ -452,6 +500,12 @@ rxversion="8.2">
 			id="2b35d301-86fe-4d6c-a5c9-9eb46ee3c6ee"
 			name="T721982">
 			</smartfoldernode>
+			<testmodule
+			id="2bd8b652-f436-4fde-b303-7d4e018baf21"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
 			<teardown
 			id="2ca257a4-9d94-41be-8965-351627c7266c"
 			name="teardown">
@@ -466,6 +520,10 @@ rxversion="8.2">
 			id="2d6d2b1e-325c-4d99-93de-d8d1d508d426"
 			name="setup">
 			</setup>
+			<testcase
+			id="2dc3bb5d-f243-4da8-8c85-684ee822229d"
+			name="Verify_data_collection_and_shows_data_on_Backups_and_Restores_screen">
+			</testcase>
 			<testcase
 			id="2e128438-0422-438d-9756-ad743eb0a28f"
 			name="Verify_that_Databases_Files_view_is_displayed_successfully">
@@ -517,6 +575,12 @@ rxversion="8.2">
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="31151837-6cc2-4721-8106-d07025604d9b"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="31b5776c-1eb0-4a76-a36f-3101cb9ed1ff"
 			name="CloseSQLdm"
 			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
@@ -526,6 +590,12 @@ rxversion="8.2">
 			id="3248f796-832a-476e-b767-165db0ee2b6f"
 			name="setup">
 			</setup>
+			<testmodule
+			id="332df759-050e-4c28-b778-2af089c81070"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="33944a0c-d046-4ade-a7c9-739c0019679a"
 			name="T722030">
@@ -540,6 +610,12 @@ rxversion="8.2">
 			id="33bdd621-13cb-430e-8bca-64b95dc230e2"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="349ce512-c783-484f-87f2-082c7c8c4591"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="34d2b714-a5ef-4790-83c4-46fd30389383"
 			name="T722154">
@@ -694,6 +770,10 @@ rxversion="8.2">
 			id="435754d5-9ab4-4240-b15e-cc8dab651c1b"
 			name="setup">
 			</setup>
+			<smartfoldernode
+			id="43ba2655-aa36-4b21-9a33-69adf6627dd1"
+			name="T722040">
+			</smartfoldernode>
 			<testmodule
 			id="44425e4a-2e9c-4702-a16b-5775eced39c0"
 			name="OpenSQLdm"
@@ -786,6 +866,10 @@ rxversion="8.2">
 			name="T722019">
 			</smartfoldernode>
 			<smartfoldernode
+			id="4d266030-3dab-48a4-9ae3-3973174e9b48"
+			name="T722049">
+			</smartfoldernode>
+			<smartfoldernode
 			id="4d73d9e5-1f0a-404b-b805-ca13dccdab39"
 			name="T722025">
 			</smartfoldernode>
@@ -795,6 +879,12 @@ rxversion="8.2">
 			</teardown>
 			<testmodule
 			id="4e0fe8df-7513-4714-aee8-684e08c211a2"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="4f22e26a-dda7-4fb3-811b-021ec5198dc2"
 			name="OpenSQLdm"
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
@@ -901,6 +991,10 @@ rxversion="8.2">
 			id="55b0585d-03df-4ebb-94ac-796912d23c20"
 			name="T722131">
 			</smartfoldernode>
+			<testcase
+			id="55f11658-60b5-4614-96d3-ea270bd25dac"
+			name="Verify_query_data_collection_and_shows_data_on_Mirroring_screen">
+			</testcase>
 			<testmodule
 			id="564273f4-5278-4df4-8d56-07371ab0ed7a"
 			name="VerifyDBFileStatisticsTableIsAggregated"
@@ -954,11 +1048,21 @@ rxversion="8.2">
 			name="setup">
 			</setup>
 			<testmodule
+			id="5a90d767-98f8-4fd9-a31f-0df32d1a50ec"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="5a9f6992-e3df-4e58-9e2c-388836fe6968"
 			name="OpenSQLdm"
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="5aab62fb-eec6-4c34-af7d-e756fd97e0c1"
+			name="teardown">
+			</teardown>
 			<smartfoldernode
 			id="5aded86f-4c27-4501-a80a-bd73f0a1ed20"
 			name="T722162">
@@ -984,6 +1088,10 @@ rxversion="8.2">
 			name="T722158">
 			</smartfoldernode>
 			<setup
+			id="5b80c4e0-4d8e-4ab2-86f0-9a45af3f0036"
+			name="setup">
+			</setup>
+			<setup
 			id="5bc84319-81ac-4ed8-b68f-bab924496a93"
 			name="setup">
 			</setup>
@@ -1006,6 +1114,10 @@ rxversion="8.2">
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="5ca6450d-b5fe-44a6-b0a2-c2999ed2adc0"
+			name="VerifyquerydatacollectionhappensandshowsdataonFilesscreen">
+			</testcase>
 			<testmodule
 			id="5cc1d791-4fc4-4dec-91f9-5543d7a4588f"
 			name="OpenSQLdm"
@@ -1044,6 +1156,10 @@ rxversion="8.2">
 			id="60c1cec7-1351-422a-a8cb-88e8b28fa3c1"
 			name="T722137">
 			</smartfoldernode>
+			<setup
+			id="60dacd44-471d-4676-8389-da772fcc06ff"
+			name="setup">
+			</setup>
 			<testmodule
 			enabled="False"
 			id="6193d8f6-8f7c-4391-82d3-a6be41d0a785"
@@ -1105,6 +1221,10 @@ rxversion="8.2">
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
 			</testmodule>
+			<setup
+			id="676e8b67-0ce7-464c-a849-28c8c02d0f4b"
+			name="setup">
+			</setup>
 			<testcase
 			id="67f81719-1998-409c-9ad1-2f266771c000"
 			name="Aggregate_forecasting_data_to_daily_records_option_is_shown_with_no_of_days">
@@ -1145,6 +1265,12 @@ rxversion="8.2">
 			id="6be54a8c-4daa-4304-af60-53beb0236e06"
 			name="setup">
 			</setup>
+			<testmodule
+			id="6c0c3fe1-74c5-416a-b9a4-bff7efb25810"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="6c5d0043-816a-4c6f-898f-ad424a6e2613"
 			name="VerifyOverviewDetailsIsDisplayedSuccessfully"
@@ -1242,6 +1368,12 @@ rxversion="8.2">
 			name="T722155">
 			</smartfoldernode>
 			<testmodule
+			id="73660f95-d19d-4693-9585-dda39a3bdbd7"
+			name="VerifydatacollectionandshowsdataonLogsscreen"
+			ref="1e4bd815-66c9-428f-8806-9c3befa56dc2"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="7376875e-46cb-4144-b580-7b759be1c94a"
 			name="OpenSQLdm"
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
@@ -1287,6 +1419,12 @@ rxversion="8.2">
 			id="76cbacee-c0d6-464a-b0f4-e86ff9605096"
 			name="OpenSQLdm"
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="773041ef-cc32-48ac-b601-fd95fd41da3b"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -1421,6 +1559,12 @@ rxversion="8.2">
 			ref="49c52721-6cd0-4b74-8326-4b723a1e44c7"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="84a697e9-7c2c-423b-b9c3-4cdb240876ff"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
 			<setup
 			id="8664fe6a-27d1-4a74-be2d-4e187524b8b2"
 			name="setup">
@@ -1485,6 +1629,12 @@ rxversion="8.2">
 			id="894b0166-b74f-448d-85b0-3a6d29580fef"
 			name="T721976">
 			</smartfoldernode>
+			<testmodule
+			id="896c194f-dbd0-44aa-8b57-4d30241ce316"
+			name="VerifyquerydatacollectionandshowsdataonMirroringscreen"
+			ref="efa4cd3e-325c-443d-b801-2821e2a25b68"
+			type="UserCode">
+			</testmodule>
 			<teardown
 			id="89bb11ac-973d-4bba-8e4d-6faf6f212b59"
 			name="teardown">
@@ -1510,6 +1660,10 @@ rxversion="8.2">
 			id="8aaa0240-6881-4d75-9e79-b91d640dfc53"
 			name="T721993">
 			</smartfoldernode>
+			<teardown
+			id="8aac58da-5efc-4dba-8fea-53927e5d7259"
+			name="teardown">
+			</teardown>
 			<teardown
 			id="8aadc2f0-2de2-4a1e-b9d8-bf7fe4ff82f4"
 			name="teardown">
@@ -1582,6 +1736,10 @@ rxversion="8.2">
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="8ffad850-f8f3-4f12-8c73-ced9084e4c17"
+			name="T722045">
+			</smartfoldernode>
 			<testmodule
 			id="9051b8f3-c0b1-43a4-8480-c96b4687b8ed"
 			name="VerifydatacollectionandshowsdataonServerWaitsscreen"
@@ -1614,6 +1772,14 @@ rxversion="8.2">
 			id="9219b935-b062-4097-a38a-2a5c4785e7b9"
 			name="Verify_that_Sessions_Locks_view_is_displayed_successfully">
 			</testcase>
+			<teardown
+			id="93836a95-5ca4-46cd-974a-697807762e4a"
+			name="teardown">
+			</teardown>
+			<smartfoldernode
+			id="93d092b1-30f6-46dd-b4b5-ba395ffabdbe"
+			name="T722036">
+			</smartfoldernode>
 			<testmodule
 			id="93f26696-cf88-49a3-9508-47cf623a46f0"
 			name="VerifyDefaultMetricsDataToBeGroomedAs90days"
@@ -1642,6 +1808,10 @@ rxversion="8.2">
 			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="9a166847-c0bb-46fc-bdd8-3848ffed5d8e"
+			name="Verify_data_collection_and_shows_data_on_Summary_screen">
+			</testcase>
 			<testcase
 			id="9a48a158-10b9-4f3b-8c05-a8ea6f82c90f"
 			name="Verify_Resources_Procedure_Cache_View_is_Displayed_Successfully">
@@ -1687,6 +1857,10 @@ rxversion="8.2">
 			<smartfoldernode
 			id="9d6a7701-ded4-4dab-9901-b800b8e86828"
 			name="T721947">
+			</smartfoldernode>
+			<smartfoldernode
+			id="9d7e9247-e39d-4716-b5bd-4cafcd5d6cfa"
+			name="T722039">
 			</smartfoldernode>
 			<testmodule
 			id="9da81495-9018-43c4-a153-601e521601ca"
@@ -1738,6 +1912,10 @@ rxversion="8.2">
 			id="a1482ccd-a9dc-4b7c-a356-35796aea2145"
 			name="teardown">
 			</teardown>
+			<setup
+			id="a16a6a03-32fa-43f5-9312-7fe0726fff28"
+			name="setup">
+			</setup>
 			<testcase
 			id="a1ac0847-a243-48c1-9a6a-21f1eac79a25"
 			name="_Verify_that_Overview_Time_line_is_displayed_successfully">
@@ -1766,6 +1944,14 @@ rxversion="8.2">
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="a4142070-7fd6-406b-8b6e-8c033a8a7920"
+			name="VerifydatacollectionhappensandshowsdataonConfigurationscreen">
+			</testcase>
+			<setup
+			id="a4b865a8-67a9-4698-837e-081ec0c5e323"
+			name="setup">
+			</setup>
 			<testcase
 			id="a4cb1e53-f221-4e45-8478-eb6c297977e9"
 			name="Verify_data_collection_and_shows_data_on_Server_Waits_screen">
@@ -1903,6 +2089,12 @@ rxversion="8.2">
 			name="T722031">
 			</smartfoldernode>
 			<testmodule
+			id="afdd8b29-d944-40cc-82ac-f72597fa5f1f"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="b09693bb-df0e-4b9d-9c5b-d16fb74122a9"
 			name="CloseSQLdm"
 			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
@@ -1973,11 +2165,21 @@ rxversion="8.2">
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="b85323c0-3464-4d99-b9d8-3c34dd5d381f"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="b8933241-3f33-4697-a8fd-e0f0890ee227"
 			name="OpenSQLdm"
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
 			</testmodule>
+			<setup
+			id="b8fbd44f-5681-4c51-ac92-d1e776e9cf53"
+			name="setup">
+			</setup>
 			<testmodule
 			id="b931bc18-f912-4b0c-9b18-1bcc56a98348"
 			name="CloseSQLdm"
@@ -2064,6 +2266,12 @@ rxversion="8.2">
 			id="c0a43a54-2f10-4198-b94d-bbfb919ee322"
 			name="T721974">
 			</smartfoldernode>
+			<testmodule
+			id="c0e4ed15-a3e3-46da-9cba-4002663f0d4b"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="c317497f-24a4-4221-b77f-c9727bb58fcc"
 			name="Availability_of_“View_data,_acknowledge_alarms,_and_control_maintenance_mode_status”_option_on_creat">
@@ -2120,6 +2328,10 @@ rxversion="8.2">
 			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
 			type="UserCode">
 			</testmodule>
+			<testcase
+			id="c723161f-b9fc-4010-b416-17e70eac8061"
+			name="Verify_query_data_connected_with_user_and_shows_data_on_Availability_Group_screen">
+			</testcase>
 			<smartfoldernode
 			id="c736bec3-9280-4650-b7d5-88d6fc418078"
 			name="T722020">
@@ -2205,6 +2417,12 @@ rxversion="8.2">
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="ce03d3d7-23dd-4ebb-a082-fc2bfd83d1f9"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="cee6f432-f418-48dc-9dd3-8c51ab065126"
 			name="OpenSQLdm"
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
@@ -2254,6 +2472,10 @@ rxversion="8.2">
 			ref="c0223962-f997-4c6f-b6c0-24cb8014dabb"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="d27fef79-efa1-40f1-95b2-3d91a1947e60"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="d28f4758-f84f-46eb-9ffa-c839c382b0c5"
 			name="CloseSQLdm"
@@ -2294,6 +2516,18 @@ rxversion="8.2">
 			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
 			type="UserCode">
 			</testmodule>
+			<teardown
+			id="d7381527-c26a-47c9-b8fa-27e5046cb4b9"
+			name="teardown">
+			</teardown>
+			<smartfoldernode
+			id="d7ac95a3-9590-435f-903d-f0d3bc0b3fed"
+			name="T722034">
+			</smartfoldernode>
+			<testcase
+			id="d7e45e9f-8237-44e8-93db-71407c7e645c"
+			name="Verify_data_collection_and_shows_data_on_Tables_and_Indexes_screen">
+			</testcase>
 			<smartfoldernode
 			id="d82a51b8-cc82-469d-aa15-78e40c416004"
 			name="T721953">
@@ -2308,6 +2542,12 @@ rxversion="8.2">
 			id="d87fd68e-df86-4c23-a902-ec3073b8740d"
 			name="VerifyViewDataAcknowledgeSqlUser"
 			ref="cd95e968-a9bf-4e2b-8ece-c2de3e5a6109"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="d91228b2-f3e7-44f2-8e41-5ab6c5f641e2"
+			name="VerifydatacollectionandshowsdataonSummaryscreen"
+			ref="6dc17d74-2bd6-45f5-ba2d-36920e28820e"
 			type="UserCode">
 			</testmodule>
 			<testmodule
@@ -2332,6 +2572,10 @@ rxversion="8.2">
 			id="dac44f75-39e7-4d52-994b-211de2b9af2e"
 			name="teardown">
 			</teardown>
+			<teardown
+			id="dac4a316-59a9-4858-918e-9eec6a62262a"
+			name="teardown">
+			</teardown>
 			<setup
 			id="dc4cfb2f-ea76-4acb-8f73-219f01837117"
 			name="setup">
@@ -2348,6 +2592,18 @@ rxversion="8.2">
 			id="e00c3c30-9251-4719-846f-9d7bfbc318c2"
 			name="setup">
 			</setup>
+			<testmodule
+			id="e012c828-98c2-49b4-bbbc-62321a93aa1f"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="e0a5eda3-9d7f-4348-954b-c2c91556aab9"
+			name="VerifydatacollectionandshowsdataonTablesandIndexesscreen"
+			ref="8e9a2ff5-a6dc-464c-badb-693e0b574608"
+			type="UserCode">
+			</testmodule>
 			<testmodule
 			id="e0f7cc0b-73a5-4f49-8464-77328a6349fe"
 			name="OpenSQLdm"
@@ -2394,6 +2650,12 @@ rxversion="8.2">
 			ref="93a0f737-c7e9-4d1c-b883-ffff9e742d73"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="e5ae7848-0075-4dc8-aee1-15f9e48d3a79"
+			name="CloseSQLdm"
+			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
+			type="UserCode">
+			</testmodule>
 			<smartfoldernode
 			id="e69b4b0f-85ca-4841-bc81-694d023c6499"
 			name="T721962">
@@ -2404,6 +2666,10 @@ rxversion="8.2">
 			ref="f6e5cfa3-a02f-427c-bddb-4185a3d272f4"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="e7ef4a90-90f9-4124-bee3-8f645cdfc658"
+			name="T722038">
+			</smartfoldernode>
 			<teardown
 			id="e81f1b32-615d-4ef5-8389-90873f2e8b1a"
 			name="teardown">
@@ -2457,6 +2723,12 @@ rxversion="8.2">
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="ed7f1cae-1cfa-462f-9cf8-0586890b9fe6"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="edf1f46c-892b-4bf5-aa7a-76a3c0e1a670"
 			name="Verifydatacollectionhappensonallwidgetsonaninstanceconnectedwithuserwithoutsysadminpermission"
 			ref="216c381f-1222-4907-a124-dc347d7ca67c"
@@ -2500,12 +2772,20 @@ rxversion="8.2">
 			ref="13c80a97-ca70-4ebb-8639-3b7e2272721f"
 			type="UserCode">
 			</testmodule>
+			<setup
+			id="efddb916-433b-4395-8523-df3c2c95cde8"
+			name="setup">
+			</setup>
 			<testmodule
 			id="f0448d78-95a5-4a2b-a220-8ac3c9f4ea8e"
 			name="VerifyDatabasesTempdbSummaryviewisDisplayedSuccessfully"
 			ref="e58c516b-f4dc-41bf-bb81-74e45f6b916d"
 			type="UserCode">
 			</testmodule>
+			<smartfoldernode
+			id="f077237d-fd49-4e8f-9f05-836d4de66e65"
+			name="T722037">
+			</smartfoldernode>
 			<teardown
 			id="f0f3728a-d7d8-455b-a938-0f13cb9161ad"
 			name="teardown">
@@ -2573,11 +2853,27 @@ rxversion="8.2">
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			id="f707aae1-218f-49ea-b949-0cc02444559b"
+			name="VerifydatacollectionandshowsdataonBackupsandRestoresscreen"
+			ref="5871bef4-b3c1-4f59-9f0e-f925b3b80486"
+			type="UserCode">
+			</testmodule>
+			<testmodule
 			id="f74640c3-e0cc-4b85-a608-56c4db3870fb"
 			name="CloseSQLdm"
 			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="f9b1f891-f77c-4e64-8f85-00fae0a5851b"
+			name="OpenSQLdm"
+			ref="f749ea84-58c0-4b06-b370-33030d553c6d"
+			type="UserCode">
+			</testmodule>
+			<testcase
+			id="f9b30819-5558-422a-9e45-717854eed798"
+			name="Verify_data_collection_and_shows_data_on_Logs_screen">
+			</testcase>
 			<smartfoldernode
 			id="f9e7d861-38e0-49a8-a60a-dbca8c89c27b"
 			name="T722018">
@@ -2622,10 +2918,20 @@ rxversion="8.2">
 			ref="0fe8941e-6526-477a-bc6f-cb90c434e430"
 			type="UserCode">
 			</testmodule>
+			<testmodule
+			id="fc320ecb-9955-46dc-a351-9a104c3348eb"
+			name="VerifyquerydataconnectedwithuserandshowsdataonAvailabilityGroupscreen"
+			ref="6dccb0fb-3707-4d0f-a93a-f63bc3b77b3c"
+			type="UserCode">
+			</testmodule>
 			<setup
 			id="fc41a151-3e52-41a9-ab47-984e77f5a020"
 			name="setup">
 			</setup>
+			<teardown
+			id="fcfc6883-58a3-45ae-bad5-b84f45f058a2"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="fdcf5063-bbc1-47fc-97fe-5231044e6a53"
 			name="VerifySnoozeAlertsAllServerSqlUser"
@@ -4814,6 +5120,258 @@ rxversion="8.2">
 							</testmodule>
 						</teardown>
 					</smartfoldernode>
+					<smartfoldernode
+					id="d7ac95a3-9590-435f-903d-f0d3bc0b3fed"
+					name="T722034">
+						<setup
+						id="5b80c4e0-4d8e-4ab2-86f0-9a45af3f0036"
+						name="setup">
+							<testmodule
+							id="332df759-050e-4c28-b778-2af089c81070"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="c723161f-b9fc-4010-b416-17e70eac8061"
+						name="Verify_query_data_connected_with_user_and_shows_data_on_Availability_Group_screen">
+							<testmodule
+							id="fc320ecb-9955-46dc-a351-9a104c3348eb"
+							name="VerifyquerydataconnectedwithuserandshowsdataonAvailabilityGroupscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="93836a95-5ca4-46cd-974a-697807762e4a"
+						name="teardown">
+							<testmodule
+							id="b85323c0-3464-4d99-b9d8-3c34dd5d381f"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="0fca66f4-eb4c-42a8-8d32-66dbdbc5a552"
+					name="T722035">
+						<setup
+						id="b8fbd44f-5681-4c51-ac92-d1e776e9cf53"
+						name="setup">
+							<testmodule
+							id="349ce512-c783-484f-87f2-082c7c8c4591"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="06696590-b8f9-46de-b9ef-5511646617ce"
+						name="Verify_query_data_connected_with_user_and_shows_data_on_Tempdb_Summary_screen">
+							<testmodule
+							id="00770db9-d5c8-4293-9333-2b4d4594826f"
+							name="VerifyquerydataconnectedwithuserandshowsdataonTempdbSummaryscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="5aab62fb-eec6-4c34-af7d-e756fd97e0c1"
+						name="teardown">
+							<testmodule
+							id="31151837-6cc2-4721-8106-d07025604d9b"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="93d092b1-30f6-46dd-b4b5-ba395ffabdbe"
+					name="T722036">
+						<setup
+						id="60dacd44-471d-4676-8389-da772fcc06ff"
+						name="setup">
+							<testmodule
+							id="ce03d3d7-23dd-4ebb-a082-fc2bfd83d1f9"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="a4142070-7fd6-406b-8b6e-8c033a8a7920"
+						name="VerifydatacollectionhappensandshowsdataonConfigurationscreen">
+							<testmodule
+							id="1da05469-c3e3-4644-ad01-04662d1c0fb0"
+							name="VerifydatacollectionhappensandshowsdataonConfigurationscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="203f1f62-8a41-4ae7-be36-866ff5641af6"
+						name="teardown">
+							<testmodule
+							id="84a697e9-7c2c-423b-b9c3-4cdb240876ff"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="f077237d-fd49-4e8f-9f05-836d4de66e65"
+					name="T722037">
+						<setup
+						id="676e8b67-0ce7-464c-a849-28c8c02d0f4b"
+						name="setup">
+							<testmodule
+							id="f9b1f891-f77c-4e64-8f85-00fae0a5851b"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="5ca6450d-b5fe-44a6-b0a2-c2999ed2adc0"
+						name="VerifyquerydatacollectionhappensandshowsdataonFilesscreen">
+							<testmodule
+							id="055589e0-8db7-49eb-a52f-e73cc90a5a32"
+							name="VerifyquerydatacollectionhappensandshowsdataonFilesscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="dac4a316-59a9-4858-918e-9eec6a62262a"
+						name="teardown">
+							<testmodule
+							id="2bd8b652-f436-4fde-b303-7d4e018baf21"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="e7ef4a90-90f9-4124-bee3-8f645cdfc658"
+					name="T722038">
+						<setup
+						id="a16a6a03-32fa-43f5-9312-7fe0726fff28"
+						name="setup">
+							<testmodule
+							id="ed7f1cae-1cfa-462f-9cf8-0586890b9fe6"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="2dc3bb5d-f243-4da8-8c85-684ee822229d"
+						name="Verify_data_collection_and_shows_data_on_Backups_and_Restores_screen">
+							<testmodule
+							id="f707aae1-218f-49ea-b949-0cc02444559b"
+							name="VerifydatacollectionandshowsdataonBackupsandRestoresscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="fcfc6883-58a3-45ae-bad5-b84f45f058a2"
+						name="teardown">
+							<testmodule
+							id="c0e4ed15-a3e3-46da-9cba-4002663f0d4b"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="9d7e9247-e39d-4716-b5bd-4cafcd5d6cfa"
+					name="T722039">
+						<setup
+						id="a4b865a8-67a9-4698-837e-081ec0c5e323"
+						name="setup">
+							<testmodule
+							id="6c0c3fe1-74c5-416a-b9a4-bff7efb25810"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="d7e45e9f-8237-44e8-93db-71407c7e645c"
+						name="Verify_data_collection_and_shows_data_on_Tables_and_Indexes_screen">
+							<testmodule
+							id="e0a5eda3-9d7f-4348-954b-c2c91556aab9"
+							name="VerifydatacollectionandshowsdataonTablesandIndexesscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="d27fef79-efa1-40f1-95b2-3d91a1947e60"
+						name="teardown">
+							<testmodule
+							id="e5ae7848-0075-4dc8-aee1-15f9e48d3a79"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="43ba2655-aa36-4b21-9a33-69adf6627dd1"
+					name="T722040">
+						<setup
+						id="1197157e-bc6c-426c-8e92-e5aa1802e9ef"
+						name="setup">
+							<testmodule
+							id="4f22e26a-dda7-4fb3-811b-021ec5198dc2"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="55f11658-60b5-4614-96d3-ea270bd25dac"
+						name="Verify_query_data_collection_and_shows_data_on_Mirroring_screen">
+							<testmodule
+							id="896c194f-dbd0-44aa-8b57-4d30241ce316"
+							name="VerifyquerydatacollectionandshowsdataonMirroringscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="d7381527-c26a-47c9-b8fa-27e5046cb4b9"
+						name="teardown">
+							<testmodule
+							id="5a90d767-98f8-4fd9-a31f-0df32d1a50ec"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="8ffad850-f8f3-4f12-8c73-ced9084e4c17"
+					name="T722045">
+						<setup
+						id="09859acb-bbf6-4152-a4c3-3f77d5eea346"
+						name="setup">
+							<testmodule
+							id="0e1743ae-6be6-4a1c-9c28-204ab64f3bbf"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="9a166847-c0bb-46fc-bdd8-3848ffed5d8e"
+						name="Verify_data_collection_and_shows_data_on_Summary_screen">
+							<testmodule
+							id="d91228b2-f3e7-44f2-8e41-5ab6c5f641e2"
+							name="VerifydatacollectionandshowsdataonSummaryscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="09ceb41a-ce8a-43b7-a7bf-7e20a639fd03"
+						name="teardown">
+							<testmodule
+							id="e012c828-98c2-49b4-bbbc-62321a93aa1f"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
+					<smartfoldernode
+					id="4d266030-3dab-48a4-9ae3-3973174e9b48"
+					name="T722049">
+						<setup
+						id="efddb916-433b-4395-8523-df3c2c95cde8"
+						name="setup">
+							<testmodule
+							id="afdd8b29-d944-40cc-82ac-f72597fa5f1f"
+							name="OpenSQLdm">
+							</testmodule>
+						</setup>
+						<testcase
+						id="f9b30819-5558-422a-9e45-717854eed798"
+						name="Verify_data_collection_and_shows_data_on_Logs_screen">
+							<testmodule
+							id="73660f95-d19d-4693-9585-dda39a3bdbd7"
+							name="VerifydatacollectionandshowsdataonLogsscreen">
+							</testmodule>
+						</testcase>
+						<teardown
+						id="8aac58da-5efc-4dba-8fea-53927e5d7259"
+						name="teardown">
+							<testmodule
+							id="773041ef-cc32-48ac-b601-fd95fd41da3b"
+							name="CloseSQLdm">
+							</testmodule>
+						</teardown>
+					</smartfoldernode>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -4824,27 +5382,6 @@ rxversion="8.2">
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="0e55ab9d-eb87-442f-a8df-d6bd66627901">
-			</testcontainer>
-			<testcontainer
-			id="4d73d9e5-1f0a-404b-b805-ca13dccdab39">
-			</testcontainer>
-			<testcontainer
-			id="5e3b329f-982d-4a6d-9158-0eed5778ea4f">
-			</testcontainer>
-			<testcontainer
-			id="83c712f9-9907-4fee-a88a-dbb2e3d28ea1">
-			</testcontainer>
-			<testcontainer
-			id="86a7a173-0f32-4c76-a603-43baf14febee">
-			</testcontainer>
-			<testcontainer
-			id="86c0d9ad-4371-49c5-a975-0e5e054f3a20">
-			</testcontainer>
-			<testcontainer
-			id="bb0c52e8-c156-4567-8b48-e7b39f082b46">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

@@ -4154,6 +4154,20 @@ AAAAAAAAABiKEP4PL9Uva6cOhYIAAAAASUVORK5CYII=
 			searchtimeout="30000ms">
 				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='ResourcesDiskSizeView']//toolbar[@controlname='driveStatisticsHeaderStrip']/menuitem[@accessiblename~'^Current\ Disk\ Usage:\ Megab']
 			</item>
+			<item
+			capname="combobox"
+			id="4f730a18-9d0c-4b16-a001-0062003d9a7b"
+			name="ddlConfiguration"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//combobox[@accessiblename='Loading...']/combobox[@accessiblerole='ComboBox']
+			</item>
+			<item
+			capname="table"
+			id="00fdde95-c450-4343-b5d6-976603152da5"
+			name="tblDatabaseConfiguration"
+			searchtimeout="30000ms">
+				//form[@title~'^Idera\ SQL\ diagnostic\ mana']//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//table[@accessiblerole='Table']
+			</item>
 			<basepath>
 				//form[@title~'^Idera\ SQL\ diagnostic\ mana']
 			</basepath>

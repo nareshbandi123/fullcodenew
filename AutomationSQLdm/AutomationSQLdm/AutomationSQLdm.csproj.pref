@@ -1,10 +1,12 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="AutomationSQLdm.rxtst" />
+    <Element value="BVT\Steps.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="AutomationSQLdm.rxtst" />
+    <Element value="BVT\BVTRepo.rxrep" />
+    <Element value="BVT\Steps.cs" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

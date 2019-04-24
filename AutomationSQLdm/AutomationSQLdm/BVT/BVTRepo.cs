@@ -469,6 +469,8 @@ namespace AutomationSQLdm.BVT
             RepoItemInfo _txtsumblockedsessionsInfo;
             RepoItemInfo _txtsumlockstatisticsInfo;
             RepoItemInfo _ddlresdisksizeInfo;
+            RepoItemInfo _ddlconfigurationInfo;
+            RepoItemInfo _tbldatabaseconfigurationInfo;
 
             /// <summary>
             /// Creates a new SQLdm  folder.
@@ -523,6 +525,8 @@ namespace AutomationSQLdm.BVT
                 _txtsumblockedsessionsInfo = new RepoItemInfo(this, "txtSUMBlockedSessions", "statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='blockedSessionsPanel']/toolbar[@controlname='blockedSessionsHeaderStrip']/text[@accessiblename='Blocked Sessions']", 30000, null, "188cd2d4-3fae-400d-aa5c-1def0e789ebc");
                 _txtsumlockstatisticsInfo = new RepoItemInfo(this, "txtSUMLockStatistics", ".//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//container[@controlname='lockStatisticsPanel']/toolbar[@controlname='lockStatisticsHeaderStrip']/menuitem[@accessiblename='Lock Statistics: Requests']", 30000, null, "6209cf2b-f70d-42fe-b313-f4d92666c7d6");
                 _ddlresdisksizeInfo = new RepoItemInfo(this, "ddlRESDiskSize", ".//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']/container[@controlname='ResourcesDiskSizeView']//toolbar[@controlname='driveStatisticsHeaderStrip']/menuitem[@accessiblename~'^Current\\ Disk\\ Usage:\\ Megab']", 30000, null, "d204e29f-6b7b-4aca-84d5-98ed59863005");
+                _ddlconfigurationInfo = new RepoItemInfo(this, "ddlConfiguration", ".//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']//combobox[@accessiblename='Loading...']/combobox[@accessiblerole='ComboBox']", 30000, null, "4f730a18-9d0c-4b16-a001-0062003d9a7b");
+                _tbldatabaseconfigurationInfo = new RepoItemInfo(this, "tblDatabaseConfiguration", ".//statusbar[@automationid='statusBar']/?/?/container[@automationid='viewContainer']/container[@automationid='viewHost']/container[@automationid='windowsFormsHostControl']/?/?/container[@controlname='_child']//table[@accessiblerole='Table']", 30000, null, "00fdde95-c450-4343-b5d6-976603152da5");
             }
 
             /// <summary>
@@ -1628,6 +1632,54 @@ namespace AutomationSQLdm.BVT
                 get
                 {
                     return _ddlresdisksizeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ddlConfiguration item.
+            /// </summary>
+            [RepositoryItem("4f730a18-9d0c-4b16-a001-0062003d9a7b")]
+            public virtual Ranorex.ComboBox ddlConfiguration
+            {
+                get
+                {
+                    return _ddlconfigurationInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ddlConfiguration item info.
+            /// </summary>
+            [RepositoryItemInfo("4f730a18-9d0c-4b16-a001-0062003d9a7b")]
+            public virtual RepoItemInfo ddlConfigurationInfo
+            {
+                get
+                {
+                    return _ddlconfigurationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The tblDatabaseConfiguration item.
+            /// </summary>
+            [RepositoryItem("00fdde95-c450-4343-b5d6-976603152da5")]
+            public virtual Ranorex.Table tblDatabaseConfiguration
+            {
+                get
+                {
+                    return _tbldatabaseconfigurationInfo.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The tblDatabaseConfiguration item info.
+            /// </summary>
+            [RepositoryItemInfo("00fdde95-c450-4343-b5d6-976603152da5")]
+            public virtual RepoItemInfo tblDatabaseConfigurationInfo
+            {
+                get
+                {
+                    return _tbldatabaseconfigurationInfo;
                 }
             }
 

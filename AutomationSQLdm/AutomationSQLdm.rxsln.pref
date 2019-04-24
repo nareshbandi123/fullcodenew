@@ -23,6 +23,6 @@
       <string>62160dca-0078-43fb-9227-be0da74ac54b</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[Base[]BVT[TC_722025[]]Commons[]Configuration[]Grooming Modifications[]TestRailAPI[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\AutomationSQLdm.rxtst&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\Grooming Modifications" />
+  <ProjectBrowserState value="[Solution AutomationSQLdm[AutomationSQLdm[Base[]BVT[TC_722025[]TC_722034[]TC_722035[]]Commons[]Configuration[]Grooming Modifications[]TestRailAPI[]]]]&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\BVT\Steps.cs&#xD;&#xA;Solution AutomationSQLdm\AutomationSQLdm\BVT\BVTRepo.rxrep" />
   <StartupProject value="{61F99090-53F7-41D0-9F8A-6FC8C2262E52}" />
 </Properties>

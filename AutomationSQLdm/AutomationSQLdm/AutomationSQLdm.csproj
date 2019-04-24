@@ -195,8 +195,35 @@
     <Compile Include="BVT\TC_722033\VerifyquerydataconnectedwithuserandshowsdataonSummaryscreen.cs">
       <id>3cf621d9-aef8-45b2-807e-557a526481c5</id>
     </Compile>
+    <Compile Include="BVT\TC_722034\VerifyquerydataconnectedwithuserandshowsdataonAvailabilityGroupscreen.cs">
+      <id>e877262e-0a15-4ed0-b4af-8d4974cb00c0</id>
+    </Compile>
+    <Compile Include="BVT\TC_722035\VerifyquerydataconnectedwithuserandshowsdataonTempdbSummaryscreen.cs">
+      <id>14f9902f-4fb8-4739-9652-705fceeb5456</id>
+    </Compile>
+    <Compile Include="BVT\TC_722036\VerifydatacollectionhappensandshowsdataonConfigurationscreen.cs">
+      <id>adf04472-6966-43c6-8e10-26812a4c51e5</id>
+    </Compile>
+    <Compile Include="BVT\TC_722037\VerifyquerydatacollectionhappensandshowsdataonFilesscreen.cs">
+      <id>81d7b3e6-13c1-4315-a1f1-58c190dfb6c7</id>
+    </Compile>
+    <Compile Include="BVT\TC_722038\VerifydatacollectionandshowsdataonBackupsandRestoresscreen.cs">
+      <id>207fc51a-531f-4c15-83c0-dcc411dff1c2</id>
+    </Compile>
+    <Compile Include="BVT\TC_722039\VerifydatacollectionandshowsdataonTablesandIndexesscreen.cs">
+      <id>bcf761d4-24ff-4b60-9b13-1f7e7ed15753</id>
+    </Compile>
+    <Compile Include="BVT\TC_722040\VerifyquerydatacollectionandshowsdataonMirroringscreen.cs">
+      <id>88be1d14-5279-49ea-af2d-7d0fb93e012d</id>
+    </Compile>
     <Compile Include="BVT\TC_722044\Verifydatacollectionhappensonallwidgetsonaninstanceconnectedwithuserwithoutsysadminpermission.cs">
       <id>e9cb50c1-20c9-4d2f-8469-71178fd6ecde</id>
+    </Compile>
+    <Compile Include="BVT\TC_722045\VerifydatacollectionandshowsdataonSummaryscreen.cs">
+      <id>9c8eeb69-516f-4da7-aa97-a6d49a34c02d</id>
+    </Compile>
+    <Compile Include="BVT\TC_722049\VerifydatacollectionandshowsdataonLogsscreen.cs">
+      <id>224b5820-1c42-4f9c-9601-277b4089c1e9</id>
     </Compile>
     <Compile Include="BVT\TC_722114\BVTVerifyanactionprovidercanbeRemovedSuccessfully.cs">
       <id>95a8c363-a3ab-45c6-8289-5f3f52363f1d</id>
@@ -590,6 +617,33 @@
     </Folder>
     <Folder Include="Base">
       <id>ef5cd861-297c-44b3-a2dd-d36529c4ce01</id>
+    </Folder>
+    <Folder Include="BVT\TC_722049">
+      <id>a689e902-bc13-449f-98c4-b5abfb1bcfa5</id>
+    </Folder>
+    <Folder Include="BVT\TC_722045">
+      <id>45980c49-3116-4af7-a851-f63a50103fdc</id>
+    </Folder>
+    <Folder Include="BVT\TC_722040">
+      <id>0ed2d119-c73d-4e57-8311-2f3c70925168</id>
+    </Folder>
+    <Folder Include="BVT\TC_722039">
+      <id>5d538ae3-5e45-4707-ba80-5710684330b6</id>
+    </Folder>
+    <Folder Include="BVT\TC_722038">
+      <id>79a37125-a2fd-4652-be18-64152e61aeff</id>
+    </Folder>
+    <Folder Include="BVT\TC_722037">
+      <id>3a162d25-f47b-458c-958e-bf3fe69e85fb</id>
+    </Folder>
+    <Folder Include="BVT\TC_722036">
+      <id>e9de52e0-37d9-4d9e-b840-fe4d071d2b43</id>
+    </Folder>
+    <Folder Include="BVT\TC_722035">
+      <id>ab38480d-152f-46af-b221-65027f341910</id>
+    </Folder>
+    <Folder Include="BVT\TC_722034">
+      <id>3b91dfcb-3d34-42af-a6b9-7d1909116cf9</id>
     </Folder>
     <Folder Include="BVT\TC_722033">
       <id>cf2fdcda-c026-4a64-8114-44119164f62c</id>

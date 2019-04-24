@@ -32,9 +32,9 @@ namespace AutomationSQLdm.BVT.TC_722033
         {
         	try 
         	{
-        		//Steps.RightClickOnServer(Config.ServerOptions_CMWIN2016S8);
-        		//Steps.ClickProperties();
-        	    //Steps.TestSQLAuthentication();
+        		Steps.RightClickOnServer(Config.ServerOptions_CMWIN2016S8);
+        		Steps.ClickProperties();
+        	    Steps.TestSQLAuthentication();
         		Steps.SelectRequiredServer(Config.ServerOptions_CMWIN2016S8);
         		Steps.ClickOnDataBasesTab();
         		Steps.ClickOnSummaryInDB();
